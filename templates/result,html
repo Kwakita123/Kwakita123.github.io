@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+Result
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+
+
+
+<body>
+<nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+{% if correct %}
+
+<h1>
+✅ Correct!
+</h1>
+
+
+{% else %}
+
+<h1>
+❌ Incorrect
+</h1>
+
+
+{% endif %}
+
+
+
+
+<h2>
+Your Answer:
+</h2>
+
+
+<p>
+{{selected}}
+</p>
+
+
+
+<h2>
+Correct Answer:
+</h2>
+
+
+<p>
+{{question.correct}}
+</p>
+
+
+
+<h2>
+How To Solve:
+</h2>
+
+
+<p>
+{{question.explanation}}
+</p>
+
+
+
+<h2>
+Why This Works:
+</h2>
+
+
+<p>
+{{question.why}}
+</p>
+
+
+
+<h2>
+Current Score:
+{{score}}
+</h2>
+
+
+
+<a href="/quiz">
+
+<button>
+Next Question
+</button>
+
+</a>
+
+
+
+</body>
+
+
+</html>
