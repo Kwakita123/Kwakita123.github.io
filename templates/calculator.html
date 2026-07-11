@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+{{tool}}
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+
+<body>
+    <nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+
+
+<h1>
+🧮 {{tool}}
+</h1>
+
+
+
+<p>
+
+Enter the two values needed for this calculation.
+
+</p>
+
+
+
+<form method="POST">
+
+
+<input 
+type="number"
+step="any"
+name="a"
+placeholder="First value"
+required>
+
+
+
+<br><br>
+
+
+
+<input
+
+type="number"
+
+step="any"
+
+name="b"
+
+placeholder="Second value"
+
+required>
+
+
+
+<br><br>
+
+
+
+<button>
+
+Calculate
+
+</button>
+
+
+</form>
+
+
+
+
+{% if result %}
+
+
+
+<div class="result">
+
+
+<h2>
+Result:
+</h2>
+
+
+<h1>
+
+{{result}}
+
+</h1>
+
+
+<p>
+
+{{explanation}}
+
+</p>
+
+
+</div>
+
+
+{% endif %}
+
+
+
+
+
+<a href="/tools">
+
+<button>
+
+Back To Tools
+
+</button>
+
+</a>
+
+
+
+</body>
+
+
+</html>
