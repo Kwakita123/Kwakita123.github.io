@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>HOSA Textbook</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+<nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+<h1>
+📖 HOSA Mathematical Textbook
+</h1>
+
+
+<p>
+15 chapters covering important competition topics.
+</p>
+
+
+
+<div class="container">
+
+
+{% for chapter in chapters %}
+
+
+<div class="card">
+
+
+<h2>
+Chapter {{loop.index}}
+</h2>
+
+
+<h3>
+{{chapter.title}}
+</h3>
+
+
+<p>
+Learn the fundamentals and understand why each method works.
+</p>
+
+
+<a href="/chapter/{{loop.index0}}">
+
+<button>
+Study Chapter
+</button>
+
+</a>
+
+
+</div>
+
+
+{% endfor %}
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
