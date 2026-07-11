@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Progress Dashboard
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+    <nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+
+<h1>
+📊 HOSA Progress Dashboard
+</h1>
+
+
+
+<div class="card">
+
+
+<h2>
+Questions Completed
+</h2>
+
+
+<h1>
+{{total}}
+</h1>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>
+Correct Answers
+</h2>
+
+
+<h1>
+{{correct}}
+</h1>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>
+Accuracy
+</h2>
+
+
+<h1>
+{{accuracy}}%
+</h1>
+
+
+</div>
+
+
+
+
+
+<h2>
+Weak Topics
+</h2>
+
+
+
+{% for topic,value in topics.items() %}
+
+
+<div class="card">
+
+
+<p>
+
+{{topic}}
+
+</p>
+
+
+<p>
+
+Mistakes:
+
+{{value}}
+
+</p>
+
+
+</div>
+
+
+{% endfor %}
+
+
+
+
+<a href="/ai">
+
+<button>
+
+Open AI Coach
+
+</button>
+
+</a>
+
+
+
+</body>
+
+</html>
