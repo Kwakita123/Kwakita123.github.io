@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+HOSA Math Tools
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+
+
+
+<body>
+<nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+
+<h1>
+🧰 HOSA Mathematical Tools
+</h1>
+
+
+
+<p>
+You can rename tools to match your learning style.
+</p>
+
+
+
+<div class="container">
+
+
+
+{% for tool in tools %}
+
+
+
+<div class="card">
+
+
+<h2>
+{{tool.custom_name}}
+</h2>
+
+
+<p>
+Original:
+
+{{tool.default_name}}
+
+</p>
+
+
+
+<a href="/calculator/{{tool.id}}">
+
+<button>
+Use Tool
+</button>
+
+</a>
+
+
+
+<form action="/rename_tool/{{tool.id}}" method="POST">
+
+
+<input 
+name="name"
+placeholder="New tool name">
+
+
+<button>
+Rename
+</button>
+
+
+</form>
+
+
+
+</div>
+
+
+{% endfor %}
+
+
+
+
+</div>
+
+
+</body>
+
+
+</html>
