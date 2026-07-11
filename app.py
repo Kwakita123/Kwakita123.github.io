@@ -30,6 +30,8 @@ def init_db():
 
     conn = get_db()
 
+    print("DATABASE INITIALIZATION STARTED")
+
 
     conn.execute("""
     CREATE TABLE IF NOT EXISTS progress(
@@ -46,7 +48,6 @@ def init_db():
     """)
 
 
-
     conn.execute("""
     CREATE TABLE IF NOT EXISTS tools(
 
@@ -60,52 +61,50 @@ def init_db():
     """)
 
 
+    tools = [
+        "Unit Converter",
+        "Fraction Calculator",
+        "Percentage Calculator",
+        "Ratio Calculator",
+        "Proportion Solver",
+        "Dosage Calculator",
+        "IV Flow Calculator",
+        "Average Calculator",
+        "Probability Calculator",
+        "Area Calculator",
+        "Volume Calculator",
+        "Equation Solver"
+    ]
+
 
     existing = conn.execute(
-        "SELECT * FROM tools"
-    ).fetchall()
+        "SELECT COUNT(*) FROM tools"
+    ).fetchone()[0]
 
 
-    if len(existing) == 0:
-
-        tools = [
-
-            "Unit Converter",
-            "Fraction Calculator",
-            "Percentage Calculator",
-            "Ratio Calculator",
-            "Proportion Solver",
-            "Dosage Calculator",
-            "IV Flow Calculator",
-            "Average Calculator",
-            "Probability Calculator",
-            "Area Calculator",
-            "Volume Calculator",
-            "Equation Solver"
-
-        ]
-
+    if existing == 0:
 
         for tool in tools:
 
             conn.execute(
                 """
-                INSERT INTO tools(default_name,custom_name)
+                INSERT INTO tools(default_name, custom_name)
 
-                VALUES(?,?)
+                VALUES (?,?)
                 """,
 
-                (tool,tool)
+                (tool, tool)
 
             )
 
 
     conn.commit()
 
+
+    print("DATABASE INITIALIZATION COMPLETE")
+
+
     conn.close()
-
-
-
 # -------------------------
 # TEXTBOOK DATA
 # -------------------------
@@ -1006,9 +1005,9 @@ def dashboard():
 
 
 # -------------------------
+init_db()
+
 
 if __name__=="__main__":
-
-    init_db()
 
     app.run(debug=True)
