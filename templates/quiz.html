@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+HOSA Competition
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+<nav>
+
+<a href="/">
+🏠 Home
+</a>
+
+
+<a href="/textbook">
+📖 Textbook
+</a>
+
+
+<a href="/tools">
+🧰 Tools
+</a>
+
+
+<a href="/quiz">
+📝 Quiz
+</a>
+
+
+<a href="/dashboard">
+📊 Dashboard
+</a>
+
+
+<a href="/ai">
+🤖 AI Coach
+</a>
+
+</nav>
+
+<h1>
+📝 HOSA Competition Practice
+</h1>
+
+
+<h2>
+Chapter:
+{{question.chapter}}
+</h2>
+
+
+
+<h2>
+{{question.question}}
+</h2>
+
+
+
+
+<form action="/answer" method="POST">
+
+
+
+{% for answer in question.answers %}
+
+
+
+<input
+
+type="radio"
+
+name="answer"
+
+value="{{answer}}"
+
+required>
+
+
+{{answer}}
+
+
+<br>
+
+
+{% endfor %}
+
+
+
+<br>
+
+
+<button>
+Submit Answer
+</button>
+
+
+
+</form>
+
+
+
+</body>
+
+
+</html>
