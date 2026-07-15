@@ -797,38 +797,137 @@ Understanding why a formula works is more important than memorizing it.
 # -------------------------
 
 
+# -------------------------
+# TOOL CALCULATORS
+# -------------------------
+
+tool_info = [
+
+{
+"name":"Unit Converter",
+"description":"Converts measurements between different units.",
+"why":"Healthcare uses many measurement systems. Converting units correctly prevents dangerous mistakes.",
+"formula":"Kilograms = Pounds ÷ 2.2",
+"inputs":["Pounds"]
+},
+
+
+{
+"name":"Fraction Calculator",
+"description":"Adds and works with fractions.",
+"why":"Fractions appear in measurements, dosages, and medical calculations.",
+"formula":"Fraction calculations require matching denominators.",
+"inputs":["First Number","Second Number"]
+},
+
+
+{
+"name":"Percentage Calculator",
+"description":"Finds a percentage of a value.",
+"why":"Percentages are used for statistics, patient data, and medical reports.",
+"formula":"Percentage = Number × (Percent ÷ 100)",
+"inputs":["Number","Percent"]
+},
+
+
+{
+"name":"Ratio Calculator",
+"description":"Compares two quantities.",
+"why":"Ratios help compare medication amounts and measurements.",
+"formula":"Ratio = First Value ÷ Second Value",
+"inputs":["First Value","Second Value"]
+},
+
+
+{
+"name":"Proportion Solver",
+"description":"Solves equal relationships between numbers.",
+"why":"Proportions help calculate unknown medical measurements.",
+"formula":"a/b = c/x",
+"inputs":["Value A","Value B"]
+},
+
+
+{
+"name":"Dosage Calculator",
+"description":"Calculates medication volume needed.",
+"why":"Correct dosage calculations are essential for patient safety.",
+"formula":"Desired Dose ÷ Available Dose × Quantity",
+"inputs":["Desired Dose","Available Dose"]
+},
+
+
+{
+"name":"IV Flow Calculator",
+"description":"Calculates IV fluid rate.",
+"why":"Healthcare workers calculate how fast fluids should be delivered.",
+"formula":"Volume ÷ Time",
+"inputs":["Volume (mL)","Time (hours)"]
+},
+
+
+{
+"name":"Average Calculator",
+"description":"Finds the mean average.",
+"why":"Averages help analyze patient data and statistics.",
+"formula":"Total ÷ Number of Values",
+"inputs":["First Number","Second Number"]
+},
+
+
+{
+"name":"Probability Calculator",
+"description":"Calculates chance of an event.",
+"why":"Probability helps understand medical statistics.",
+"formula":"Successful Outcomes ÷ Total Outcomes",
+"inputs":["Successful Outcomes","Total Outcomes"]
+},
+
+
+{
+"name":"Area Calculator",
+"description":"Finds the area of a rectangle.",
+"why":"Area is used for measurements and calculations.",
+"formula":"Length × Width",
+"inputs":["Length","Width"]
+},
+
+
+{
+"name":"Volume Calculator",
+"description":"Finds volume.",
+"why":"Volume calculations are used for fluids and measurements.",
+"formula":"Length × Width × Height",
+"inputs":["Length","Width"]
+},
+
+
+{
+"name":"Equation Solver",
+"description":"Finds an unknown number.",
+"why":"Equations help solve medical math problems.",
+"formula":"Find the missing value.",
+"inputs":["Number A","Number B"]
+
+}
+
+]
+
+
+
 @app.route("/calculator/<int:id>", methods=["GET","POST"])
 def calculator(id):
+
+    tool = tool_info[id-1]
 
     result = None
     explanation = ""
 
-    tools = [
 
-        "Unit Converter",
-        "Fraction Calculator",
-        "Percentage Calculator",
-        "Ratio Calculator",
-        "Proportion Solver",
-        "Dosage Calculator",
-        "IV Flow Calculator",
-        "Average Calculator",
-        "Probability Calculator",
-        "Area Calculator",
-        "Volume Calculator",
-        "Equation Solver"
+    if request.method=="POST":
 
-    ]
-
-
-    tool = tools[id-1]
-
-
-    if request.method == "POST":
-
-
-        a = request.form.get("a")
-        b = request.form.get("b")
+        a=request.form.get("a")
+        b=request.form.get("b")
 
 
         try:
@@ -837,131 +936,195 @@ def calculator(id):
             b=float(b)
 
 
-            if id == 1:
 
-                result = round(a / 2.2,2)
+            if id==1:
 
-                explanation = (
-                    "Pounds are converted to kilograms by dividing by 2.2."
-                )
+                result=round(a/2.2,2)
 
+                explanation=f"""
+Step 1:
+Take the pounds value: {a}
 
-            elif id == 2:
+Step 2:
+Divide by 2.2
 
-                result = a + b
+{a} ÷ 2.2 = {result} kg
 
-                explanation = (
-                    "Fractions are combined by using a common denominator."
-                )
-
-
-            elif id == 3:
-
-                result = a * (b/100)
-
-                explanation = (
-                    "Percentage means parts per 100."
-                )
+Why:
+Healthcare uses kilograms for many measurements.
+"""
 
 
-            elif id == 4:
+            elif id==2:
 
-                result = a / b
+                result=a+b
 
-                explanation = (
-                    "Ratios compare two values."
-                )
+                explanation="""
+Step:
+Add the two values together.
 
-
-            elif id == 5:
-
-                result = a*b
-
-                explanation = (
-                    "Proportions keep two ratios equal."
-                )
+Why:
+Fractions represent parts of a whole.
+"""
 
 
-            elif id == 6:
+            elif id==3:
 
-                result = a/b
+                result=a*(b/100)
 
-                explanation = (
-                    "Dosage uses Desired Dose ÷ Available Dose."
-                )
+                explanation=f"""
+Step 1:
+Convert {b}% into decimal form.
 
+{b}/100
 
-            elif id == 7:
+Step 2:
+Multiply by the total.
 
-                result = a/b
-
-                explanation = (
-                    "IV rate = Volume ÷ Time."
-                )
-
-
-            elif id == 8:
-
-                result = (a+b)/2
-
-                explanation = (
-                    "Average = total values divided by amount."
-                )
+Why:
+Percent means 'out of 100'.
+"""
 
 
-            elif id == 9:
+            elif id==4:
 
-                result = a/b
+                result=a/b
 
-                explanation = (
-                    "Probability = successful outcomes ÷ total outcomes."
-                )
+                explanation="""
+Step:
+Divide the two values.
 
-
-            elif id == 10:
-
-                result = a*b
-
-                explanation = (
-                    "Area = length × width."
-                )
+Why:
+Ratios compare relationships between numbers.
+"""
 
 
-            elif id == 11:
+            elif id==5:
 
-                result = a*b
+                result=a*b
 
-                explanation = (
-                    "Volume = length × width × height."
-                )
+                explanation="""
+Step:
+Multiply the known values.
+
+Why:
+Proportions keep relationships equal.
+"""
 
 
-            elif id == 12:
+            elif id==6:
 
-                result = a-b
+                result=a/b
 
-                explanation = (
-                    "Equation solving finds the unknown value."
-                )
+                explanation=f"""
+Formula:
+
+Desired Dose ÷ Available Dose
+
+{a} ÷ {b} = {result}
+
+Why:
+This keeps medication concentration accurate.
+"""
+
+
+            elif id==7:
+
+                result=a/b
+
+                explanation=f"""
+Formula:
+
+Volume ÷ Time
+
+{a} ÷ {b} = {result} mL/hr
+
+Why:
+IV calculations control fluid delivery speed.
+"""
+
+
+            elif id==8:
+
+                result=(a+b)/2
+
+                explanation="""
+Formula:
+
+(Add values) ÷ Number of values
+
+Why:
+Average finds the middle measurement.
+"""
+
+
+            elif id==9:
+
+                result=a/b
+
+                explanation="""
+Formula:
+
+Successful Outcomes ÷ Total Outcomes
+
+Why:
+Probability measures chance.
+"""
+
+
+            elif id==10:
+
+                result=a*b
+
+                explanation="""
+Formula:
+
+Length × Width
+
+Why:
+Area measures space inside a shape.
+"""
+
+
+            elif id==11:
+
+                result=a*b
+
+                explanation="""
+Formula:
+
+Length × Width × Height
+
+Why:
+Volume measures the amount of space an object contains.
+"""
+
+
+            elif id==12:
+
+                result=a-b
+
+                explanation="""
+Step:
+
+Move known values away from the unknown.
+
+Why:
+Algebra helps solve missing measurements.
+"""
 
 
         except:
 
-            result="Invalid input"
-
+            result="Please enter numbers only"
 
 
 
     return render_template(
-
         "calculator.html",
-
         tool=tool,
-
         result=result,
-
         explanation=explanation
-
     )
 @app.route("/dashboard")
 def dashboard():
