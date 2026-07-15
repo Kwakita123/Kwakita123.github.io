@@ -1,165 +1,48 @@
-<!DOCTYPE html>
-
-<html>
+<h1>{{tool.name}}</h1>
 
 
-<head>
-
-<title>
-{{tool}}
-</title>
+<h3>What this tool does:</h3>
+<p>{{tool.description}}</p>
 
 
-<link rel="stylesheet" href="/static/style.css">
-
-</head>
-
+<h3>Why use this?</h3>
+<p>{{tool.why}}</p>
 
 
-<body>
-    <nav>
-
-<a href="/">
-🏠 Home
-</a>
-
-
-<a href="/textbook">
-📖 Textbook
-</a>
-
-
-<a href="/tools">
-🧰 Tools
-</a>
-
-
-<a href="/quiz">
-📝 Quiz
-</a>
-
-
-<a href="/dashboard">
-📊 Dashboard
-</a>
-
-
-<a href="/ai">
-🤖 AI Coach
-</a>
-
-</nav>
-
-
-
-<h1>
-🧮 {{tool}}
-</h1>
-
-
-
-<p>
-
-Enter the two values needed for this calculation.
-
-</p>
-
+<h3>Formula:</h3>
+<p>{{tool.formula}}</p>
 
 
 <form method="POST">
 
-
-<input 
-type="number"
-step="any"
-name="a"
-placeholder="First value"
-required>
+<label>Enter first value:</label>
+<input name="a" required>
 
 
-
-<br><br>
-
-
-
-<input
-
-type="number"
-
-step="any"
-
-name="b"
-
-placeholder="Second value"
-
-required>
-
-
-
-<br><br>
-
+<label>Enter second value:</label>
+<input name="b" required>
 
 
 <button>
-
 Calculate
-
 </button>
-
 
 </form>
 
 
-
-
 {% if result %}
 
+<h2>Result:</h2>
+
+<p>{{result}}</p>
 
 
-<div class="result">
+<h3>Explanation:</h3>
 
-
-<h2>
-Result:
-</h2>
-
-
-<h1>
-
-{{result}}
-
-</h1>
-
-
-<p>
-
+<p style="white-space:pre-line;">
 {{explanation}}
-
 </p>
 
-
-</div>
-
-
 {% endif %}
-
-
-
-
-
-<a href="/tools">
-
-<button>
-
-Back To Tools
-
-</button>
-
-</a>
-
-
-
-</body>
-
 
 </html>
