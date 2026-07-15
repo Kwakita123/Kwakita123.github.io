@@ -805,109 +805,98 @@ tool_info = [
 
 {
 "name":"Unit Converter",
-"description":"Converts measurements between different units.",
-"why":"Healthcare uses many measurement systems. Converting units correctly prevents dangerous mistakes.",
+"description":"Converts pounds into kilograms.",
+"why":"Healthcare uses kilograms for accurate measurements.",
 "formula":"Kilograms = Pounds ÷ 2.2",
 "inputs":["Pounds"]
 },
 
-
 {
 "name":"Fraction Calculator",
-"description":"Adds and works with fractions.",
-"why":"Fractions appear in measurements, dosages, and medical calculations.",
-"formula":"Fraction calculations require matching denominators.",
-"inputs":["First Number","Second Number"]
+"description":"Adds two fraction values.",
+"why":"Fractions are used in measurements and dosage calculations.",
+"formula":"Fraction calculations combine parts of a whole.",
+"inputs":["Fraction Value"]
 },
-
 
 {
 "name":"Percentage Calculator",
-"description":"Finds a percentage of a value.",
-"why":"Percentages are used for statistics, patient data, and medical reports.",
-"formula":"Percentage = Number × (Percent ÷ 100)",
-"inputs":["Number","Percent"]
+"description":"Finds a percentage of a number.",
+"why":"Percentages are used in statistics and medical reports.",
+"formula":"Number × Percentage ÷ 100",
+"inputs":["Number","Percentage"]
 },
-
 
 {
 "name":"Ratio Calculator",
 "description":"Compares two quantities.",
-"why":"Ratios help compare medication amounts and measurements.",
-"formula":"Ratio = First Value ÷ Second Value",
+"why":"Ratios are used for medication concentrations.",
+"formula":"First Value ÷ Second Value",
 "inputs":["First Value","Second Value"]
 },
 
-
 {
 "name":"Proportion Solver",
-"description":"Solves equal relationships between numbers.",
+"description":"Solves equal relationships.",
 "why":"Proportions help calculate unknown medical measurements.",
 "formula":"a/b = c/x",
-"inputs":["Value A","Value B"]
+"inputs":["Known Value","Multiplier"]
 },
-
 
 {
 "name":"Dosage Calculator",
-"description":"Calculates medication volume needed.",
-"why":"Correct dosage calculations are essential for patient safety.",
+"description":"Calculates medication amount needed.",
+"why":"Used to safely calculate medication doses.",
 "formula":"Desired Dose ÷ Available Dose × Quantity",
-"inputs":["Desired Dose","Available Dose"]
+"inputs":["Desired Dose (mg)","Available Dose (mg)","Quantity (mL)"]
 },
-
 
 {
 "name":"IV Flow Calculator",
-"description":"Calculates IV fluid rate.",
-"why":"Healthcare workers calculate how fast fluids should be delivered.",
+"description":"Calculates IV delivery speed.",
+"why":"Used to determine fluid delivery rate.",
 "formula":"Volume ÷ Time",
 "inputs":["Volume (mL)","Time (hours)"]
 },
 
-
 {
 "name":"Average Calculator",
-"description":"Finds the mean average.",
-"why":"Averages help analyze patient data and statistics.",
+"description":"Calculates the average of numbers.",
+"why":"Used for analyzing patient data.",
 "formula":"Total ÷ Number of Values",
-"inputs":["First Number","Second Number"]
+"inputs":["Values"]
 },
-
 
 {
 "name":"Probability Calculator",
-"description":"Calculates chance of an event.",
-"why":"Probability helps understand medical statistics.",
+"description":"Calculates chance.",
+"why":"Used in healthcare statistics.",
 "formula":"Successful Outcomes ÷ Total Outcomes",
 "inputs":["Successful Outcomes","Total Outcomes"]
 },
 
-
 {
 "name":"Area Calculator",
-"description":"Finds the area of a rectangle.",
-"why":"Area is used for measurements and calculations.",
+"description":"Calculates area.",
+"why":"Used for measurement calculations.",
 "formula":"Length × Width",
 "inputs":["Length","Width"]
 },
 
-
 {
 "name":"Volume Calculator",
-"description":"Finds volume.",
-"why":"Volume calculations are used for fluids and measurements.",
+"description":"Calculates volume.",
+"why":"Used for fluid and measurement problems.",
 "formula":"Length × Width × Height",
-"inputs":["Length","Width"]
+"inputs":["Length","Width","Height"]
 },
-
 
 {
 "name":"Equation Solver",
-"description":"Finds an unknown number.",
-"why":"Equations help solve medical math problems.",
-"formula":"Find the missing value.",
-"inputs":["Number A","Number B"]
+"description":"Finds unknown values.",
+"why":"Algebra helps solve medical math problems.",
+"formula":"Solve for the missing variable.",
+"inputs":["Known Number"]
 
 }
 
