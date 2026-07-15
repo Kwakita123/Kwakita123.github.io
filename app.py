@@ -1003,37 +1003,46 @@ Proportions keep relationships equal.
 """
 
 
-            elif id==6:
+           elif id==6:
 
-                result=a/b
+    result=(a/b)*c
 
-                explanation=f"""
+    explanation=f"""
 Formula:
 
-Desired Dose ÷ Available Dose
+Desired Dose ÷ Available Dose × Quantity
 
-{a} ÷ {b} = {result}
+
+{a} ÷ {b} × {c}
+
+= {result} mL
+
 
 Why:
-This keeps medication concentration accurate.
+
+This calculates the correct medication volume.
 """
 
 
-            elif id==7:
+          elif id==7:
 
-                result=a/b
+    result=a/b
 
-                explanation=f"""
+    explanation=f"""
 Formula:
 
 Volume ÷ Time
 
-{a} ÷ {b} = {result} mL/hr
+
+{a} ÷ {b}
+
+= {result} mL/hr
+
 
 Why:
-IV calculations control fluid delivery speed.
-"""
 
+This determines how fast IV fluid is delivered.
+"""
 
             elif id==8:
 
