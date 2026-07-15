@@ -915,14 +915,16 @@ def calculator(id):
 
     if request.method=="POST":
 
-        a=request.form.get("a")
-        b=request.form.get("b")
+     a=request.form.get("value1")
+b=request.form.get("value2")
+c=request.form.get("value3")
 
 
         try:
 
-            a=float(a)
-            b=float(b)
+          a=float(a) if a else 0
+b=float(b) if b else 0
+c=float(c) if c else 0
 
 
 
