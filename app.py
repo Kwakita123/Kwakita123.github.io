@@ -913,7 +913,7 @@ def calculator(id):
     explanation = ""
 
 
-    if request.method=="POST":
+        if request.method=="POST":
 a=request.form.get("value1")
 b=request.form.get("value2")
 c=request.form.get("value3")
