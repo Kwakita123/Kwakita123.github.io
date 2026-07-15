@@ -110,6 +110,10 @@ def init_db():
 # -------------------------
 
 
+# -------------------------
+# TEXTBOOK DATA
+# -------------------------
+
 chapters = [
 
 {
@@ -125,13 +129,16 @@ Important skills:
 - Measurement
 - Precision
 
+
 Formula:
 
 Kilograms = Pounds ÷ 2.2
 
+
 Example:
 
 154 pounds ÷ 2.2 = 70 kilograms
+
 
 Why:
 
@@ -148,9 +155,9 @@ Fractions represent parts of a whole.
 
 Medical examples:
 
-Dosage measurements
-Concentration
-Ratios
+- Dosage measurements
+- Concentration
+- Ratios
 
 
 Example:
@@ -171,6 +178,7 @@ Many healthcare calculations require precise decimal values.
 """
 Percentages show parts per 100.
 
+
 Formula:
 
 Percent = Part ÷ Whole × 100
@@ -180,9 +188,14 @@ Example:
 
 25 out of 100 patients
 
-25/100 × 100 = 25%
 
-Used for statistics and medical reports.
+25 ÷ 100 × 100 = 25%
+
+
+Why:
+
+Percentages are used for statistics,
+patient data, and medical reports.
 """
 },
 
@@ -193,11 +206,19 @@ Used for statistics and medical reports.
 """
 Ratios compare two quantities.
 
+
 Example:
 
 250mg : 5mL
 
+
 This relationship helps calculate medication amounts.
+
+
+Why:
+
+Healthcare workers use ratios to maintain
+accurate measurements.
 """
 },
 
@@ -206,15 +227,20 @@ This relationship helps calculate medication amounts.
 "title":"Dimensional Analysis",
 "text":
 """
-Dimensional analysis converts units.
+Dimensional analysis converts between units.
+
 
 Example:
 
 mg → g
 
+
 Units cancel until the correct answer remains.
 
-This prevents calculation mistakes.
+
+Why:
+
+This method prevents unit conversion mistakes.
 """
 },
 
@@ -223,6 +249,9 @@ This prevents calculation mistakes.
 "title":"Dosage Calculations",
 "text":
 """
+Dosage calculations determine medication amounts.
+
+
 Formula:
 
 Desired Dose ÷ Available Dose × Quantity
@@ -235,7 +264,10 @@ Example:
 = 10mL
 
 
-Used for medication calculations.
+Why:
+
+Correct dosage calculations help provide safe
+and accurate medication amounts.
 """
 },
 
@@ -246,15 +278,24 @@ Used for medication calculations.
 """
 IV calculations determine fluid delivery.
 
+
 Formula:
 
 Volume ÷ Time
+
 
 Example:
 
 500mL over 5 hours
 
+
 500 ÷ 5 = 100mL/hr
+
+
+Why:
+
+Healthcare workers use IV calculations to control
+fluid delivery speed.
 """
 },
 
@@ -264,6 +305,7 @@ Example:
 "text":
 """
 Statistics helps analyze healthcare data.
+
 
 Mean:
 
@@ -278,6 +320,12 @@ Middle value
 Mode:
 
 Most common value
+
+
+Why:
+
+Statistics helps healthcare workers understand
+data and make decisions.
 """
 },
 
@@ -288,12 +336,22 @@ Most common value
 """
 Probability measures chance.
 
+
 Formula:
 
 Possible Outcomes ÷ Total Outcomes
 
 
-Used for medical predictions.
+Example:
+
+Probability helps predict possible outcomes
+using data.
+
+
+Why:
+
+Healthcare uses probability when analyzing risks
+and statistics.
 """
 },
 
@@ -302,7 +360,8 @@ Used for medical predictions.
 "title":"Geometry",
 "text":
 """
-Geometry measures shapes.
+Geometry measures shapes and space.
+
 
 Area:
 
@@ -314,7 +373,10 @@ Volume:
 Length × Width × Height
 
 
-Used for measurements.
+Why:
+
+Geometry is used for measurements involving
+space and objects.
 """
 },
 
@@ -325,14 +387,19 @@ Used for measurements.
 """
 Algebra solves unknown values.
 
+
 Example:
 
 x + 5 = 10
 
+
 x = 5
 
 
-Variables represent unknown measurements.
+Why:
+
+Variables represent unknown measurements
+that must be calculated.
 """
 },
 
@@ -341,13 +408,20 @@ Variables represent unknown measurements.
 "title":"Graphs and Data",
 "text":
 """
-Charts display information.
+Charts and graphs display information.
+
 
 Important skills:
 
 - Reading trends
 - Comparing data
 - Understanding changes
+
+
+Why:
+
+Healthcare workers use graphs to analyze
+information quickly.
 """
 },
 
@@ -357,11 +431,18 @@ Important skills:
 "text":
 """
 Scientific notation represents very large
-or small numbers.
+or very small numbers.
+
 
 Example:
 
 0.0005 = 5 × 10^-4
+
+
+Why:
+
+Scientific notation makes difficult numbers
+easier to read and calculate.
 """
 },
 
@@ -372,10 +453,17 @@ Example:
 """
 Competition success requires:
 
+
 - Speed
 - Accuracy
 - Understanding formulas
 - Checking work
+
+
+Why:
+
+Strong strategies improve performance during
+timed HOSA competitions.
 """
 },
 
@@ -386,16 +474,273 @@ Competition success requires:
 """
 Final review combines:
 
-Medical math
-Statistics
-Algebra
-Conversions
 
-Practice mixed problems.
+- Medical math
+- Statistics
+- Algebra
+- Conversions
+
+
+Practice mixed problems and review formulas.
+
+
+Why:
+
+Combining skills prepares students for advanced
+HOSA Medical Math questions.
 """
 }
 
 ]
+
+@app.route("/calculator/<int:id>", methods=["GET", "POST"])
+def calculator(id):
+
+    tool = tool_info[id-1]
+
+    result = None
+    explanation = ""
+
+
+    if request.method == "POST":
+
+        a = request.form.get("value1")
+        b = request.form.get("value2")
+        c = request.form.get("value3")
+
+
+        try:
+
+            a = float(a) if a else 0
+            b = float(b) if b else 0
+            c = float(c) if c else 0
+
+
+            if id == 1:
+
+                result = round(a / 2.2, 2)
+
+                explanation = f"""
+Step 1:
+Take the pounds value.
+
+Step 2:
+Divide by 2.2.
+
+{a} ÷ 2.2 = {result} kg
+
+
+Why:
+
+Healthcare uses kilograms as a standard measurement.
+"""
+
+
+            elif id == 2:
+
+                result = a + b
+
+                explanation = """
+Step:
+
+Add the values together.
+
+
+Why:
+
+Fractions represent parts of a whole.
+"""
+
+
+            elif id == 3:
+
+                result = a * (b / 100)
+
+                explanation = f"""
+Step 1:
+
+Convert {b}% into decimal form.
+
+
+Step 2:
+
+Multiply:
+
+{a} × {b/100}
+
+
+Why:
+
+Percent means parts per 100.
+"""
+
+
+            elif id == 4:
+
+                result = a / b
+
+                explanation = """
+Formula:
+
+First Value ÷ Second Value
+
+
+Why:
+
+Ratios compare two quantities.
+"""
+
+
+            elif id == 5:
+
+                result = a * b
+
+                explanation = """
+Formula:
+
+Multiply known values.
+
+
+Why:
+
+Proportions keep relationships equal.
+"""
+
+
+            elif id == 6:
+
+                result = (a / b) * c
+
+                explanation = f"""
+Formula:
+
+Desired Dose ÷ Available Dose × Quantity
+
+
+{a} ÷ {b} × {c}
+
+= {result} mL
+
+
+Why:
+
+This calculates medication volume.
+"""
+
+
+            elif id == 7:
+
+                result = a / b
+
+                explanation = f"""
+Formula:
+
+Volume ÷ Time
+
+
+{a} ÷ {b}
+
+= {result} mL/hr
+
+
+Why:
+
+This determines IV delivery speed.
+"""
+
+
+            elif id == 8:
+
+                result = (a+b)/2
+
+                explanation = """
+Formula:
+
+Total ÷ Number of Values
+
+
+Why:
+
+Average finds the center value.
+"""
+
+
+            elif id == 9:
+
+                result = a/b
+
+                explanation = """
+Formula:
+
+Successful Outcomes ÷ Total Outcomes
+
+
+Why:
+
+Probability measures chance.
+"""
+
+
+            elif id == 10:
+
+                result = a*b
+
+                explanation = """
+Formula:
+
+Length × Width
+
+
+Why:
+
+Area measures space.
+"""
+
+
+            elif id == 11:
+
+                result = a*b*c
+
+                explanation = """
+Formula:
+
+Length × Width × Height
+
+
+Why:
+
+Volume measures space occupied.
+"""
+
+
+            elif id == 12:
+
+                result = a-b
+
+                explanation = """
+Step:
+
+Subtract known values to find the unknown.
+
+
+Why:
+
+Algebra solves missing measurements.
+"""
+
+
+        except:
+
+            result = "Please enter numbers only"
+
+
+
+    return render_template(
+        "calculator.html",
+        tool=tool,
+        result=result,
+        explanation=explanation
+    )
 
 
 
@@ -913,24 +1258,25 @@ def calculator(id):
     explanation = ""
 
 
-        if request.method=="POST":
-a=request.form.get("value1")
-b=request.form.get("value2")
-c=request.form.get("value3")
+    if request.method=="POST":
+
+        a = request.form.get("value1")
+        b = request.form.get("value2")
+        c = request.form.get("value3")
 
 
         try:
-a=float(a) if a else 0
-b=float(b) if b else 0
-c=float(c) if c else 0
+
+            a = float(a) if a else 0
+            b = float(b) if b else 0
+            c = float(c) if c else 0
 
 
+            if id == 1:
 
-            if id==1:
+                result = round(a/2.2,2)
 
-                result=round(a/2.2,2)
-
-                explanation=f"""
+                explanation = f"""
 Step 1:
 Take the pounds value: {a}
 
@@ -940,72 +1286,75 @@ Divide by 2.2
 {a} ÷ 2.2 = {result} kg
 
 Why:
-Healthcare uses kilograms for many measurements.
+Healthcare uses kilograms for accurate measurements.
 """
 
 
-            elif id==2:
+            elif id == 2:
 
-                result=a+b
+                result = a+b
 
-                explanation="""
+                explanation = """
 Step:
-Add the two values together.
+Add the values together.
 
 Why:
 Fractions represent parts of a whole.
 """
 
 
-            elif id==3:
+            elif id == 3:
 
-                result=a*(b/100)
+                result = a*(b/100)
 
-                explanation=f"""
-Step 1:
-Convert {b}% into decimal form.
+                explanation = f"""
+Step:
+Convert percentage into decimal form.
 
-{b}/100
+{b}% = {b}/100
 
-Step 2:
-Multiply by the total.
+Then multiply:
+
+{a} × {b/100}
 
 Why:
-Percent means 'out of 100'.
+Percent means parts per 100.
 """
 
 
-            elif id==4:
+            elif id == 4:
 
-                result=a/b
+                result = a/b
 
-                explanation="""
-Step:
-Divide the two values.
+                explanation = """
+Formula:
+
+First Value ÷ Second Value
 
 Why:
-Ratios compare relationships between numbers.
+Ratios compare quantities.
 """
 
 
-            elif id==5:
+            elif id == 5:
 
-                result=a*b
+                result = a*b
 
-                explanation="""
-Step:
-Multiply the known values.
+                explanation = """
+Formula:
+
+Multiply known values.
 
 Why:
 Proportions keep relationships equal.
 """
 
 
-           elif id==6:
+            elif id == 6:
 
-    result=(a/b)*c
+                result = (a/b)*c
 
-    explanation=f"""
+                explanation = f"""
 Formula:
 
 Desired Dose ÷ Available Dose × Quantity
@@ -1022,11 +1371,11 @@ This calculates the correct medication volume.
 """
 
 
-          elif id==7:
+            elif id == 7:
 
-    result=a/b
+                result = a/b
 
-    explanation=f"""
+                explanation = f"""
 Formula:
 
 Volume ÷ Time
@@ -1039,28 +1388,29 @@ Volume ÷ Time
 
 Why:
 
-This determines how fast IV fluid is delivered.
+This determines IV fluid delivery speed.
 """
 
-            elif id==8:
 
-                result=(a+b)/2
+            elif id == 8:
 
-                explanation="""
+                result = (a+b)/2
+
+                explanation = """
 Formula:
 
-(Add values) ÷ Number of values
+(Total values) ÷ Number of values
 
 Why:
-Average finds the middle measurement.
+Average finds the center value.
 """
 
 
-            elif id==9:
+            elif id == 9:
 
-                result=a/b
+                result = a/b
 
-                explanation="""
+                explanation = """
 Formula:
 
 Successful Outcomes ÷ Total Outcomes
@@ -1070,11 +1420,11 @@ Probability measures chance.
 """
 
 
-            elif id==10:
+            elif id == 10:
 
-                result=a*b
+                result = a*b
 
-                explanation="""
+                explanation = """
 Formula:
 
 Length × Width
@@ -1084,31 +1434,31 @@ Area measures space inside a shape.
 """
 
 
-            elif id==11:
+            elif id == 11:
 
-                result=a*b
+                result = a*b
 
-                explanation="""
+                explanation = """
 Formula:
 
 Length × Width × Height
 
 Why:
-Volume measures the amount of space an object contains.
+Volume measures space an object contains.
 """
 
 
-            elif id==12:
+            elif id == 12:
 
-                result=a-b
+                result = a-b
 
-                explanation="""
+                explanation = """
 Step:
 
-Move known values away from the unknown.
+Use algebra rules to find the unknown.
 
 Why:
-Algebra helps solve missing measurements.
+Equations solve missing values.
 """
 
 
