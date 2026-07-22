@@ -3,101 +3,75 @@
 
 <head>
 
-<title>{{tool.name}}</title>
+    <title>{{ tool.name }}</title>
+    <link rel="stylesheet" href="/static/style.css">
 
 </head>
 
-
 <body>
 
+<nav>
 
-<h1>{{tool.name}}</h1>
+<a href="/">🏠 Home</a>
+<a href="/textbook">📖 Textbook</a>
+<a href="/tools">🧰 Tools</a>
+<a href="/quiz">📝 Quiz</a>
+<a href="/dashboard">📊 Dashboard</a>
+<a href="/ai">🤖 AI Coach</a>
 
+</nav>
+
+<h1>{{ tool.name }}</h1>
 
 <h2>What does this tool do?</h2>
 
-<p>
-{{tool.description}}
-</p>
-
-
+<p>{{ tool.description }}</p>
 
 <h2>Why do we use this?</h2>
 
-<p>
-{{tool.why}}
-</p>
-
-
+<p>{{ tool.why }}</p>
 
 <h2>Formula</h2>
 
-<p>
-{{tool.formula}}
-</p>
-
-
+<p>{{ tool.formula }}</p>
 
 <form method="POST">
 
-
 {% for input in tool.inputs %}
 
-<label>
-{{input}}
-</label>
+<label>{{ input }}</label><br>
 
-<br>
-
-<input 
-type="number"
-step="any"
-name="value{{loop.index}}"
-required>
+<input
+    type="number"
+    step="any"
+    name="value{{ loop.index }}"
+    required>
 
 <br><br>
 
-
 {% endfor %}
 
-
-
-<button>
+<button type="submit">
 Calculate
 </button>
 
-
 </form>
 
-
-
-{% if result %}
+{% if result is not none %}
 
 <hr>
 
+<h2>Result</h2>
 
-<h2>Result:</h2>
+<p>{{ result }}</p>
 
-<p>
-{{result}}
+<h2>Explanation</h2>
+
+<p style="white-space: pre-line;">
+{{ explanation }}
 </p>
-
-
-
-<h2>How it was solved:</h2>
-
-
-<p style="white-space:pre-line">
-
-{{explanation}}
-
-</p>
-
 
 {% endif %}
 
-
-
 </body>
-
 </html>
