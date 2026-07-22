@@ -609,8 +609,190 @@ questions = [
 "why":
 "0 means impossible and 1 means certain."
 }
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 154 pounds. What is the weight in kilograms?",
+"answers":["60 kg","65 kg","70 kg","75 kg"],
+"correct":"70 kg",
+"explanation":"Convert pounds to kilograms by dividing by 2.2.\n154 ÷ 2.2 = 70 kg.",
+"why":"Healthcare professionals commonly use kilograms when calculating medication dosages."
+},
 
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 220 pounds. What is the weight in kilograms?",
+"answers":["90 kg","95 kg","100 kg","105 kg"],
+"correct":"100 kg",
+"explanation":"220 ÷ 2.2 = 100 kg.",
+"why":"Weight conversions are used for dosage calculations."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 132 pounds. What is the weight in kilograms?",
+"answers":["55 kg","60 kg","65 kg","70 kg"],
+"correct":"60 kg",
+"explanation":"132 ÷ 2.2 = 60 kg.",
+"why":"Always convert pounds into kilograms before using mg/kg formulas."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"Which unit is commonly used for patient body weight in medication calculations?",
+"answers":["Kilograms","Miles","Liters","Inches"],
+"correct":"Kilograms",
+"explanation":"Medication dosing formulas usually require kilograms.",
+"why":"Using the correct unit prevents dosage errors."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many grams are in 1000 milligrams?",
+"answers":["10","100","1000","1"],
+"correct":"1",
+"explanation":"1000 mg = 1 g.",
+"why":"Metric conversions are essential in healthcare."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many milliliters are in one liter?",
+"answers":["10","100","1000","10000"],
+"correct":"1000",
+"explanation":"1 L = 1000 mL.",
+"why":"Fluid measurements are often converted in medicine."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 198 pounds. What is the weight in kilograms?",
+"answers":["80 kg","85 kg","90 kg","95 kg"],
+"correct":"90 kg",
+"explanation":"198 ÷ 2.2 = 90 kg.",
+"why":"Kilograms are the standard weight unit in healthcare."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"Which conversion is correct?",
+"answers":["1 kg = 2.2 lb","1 lb = 2.2 kg","1 kg = 10 lb","1 lb = 5 kg"],
+"correct":"1 kg = 2.2 lb",
+"explanation":"One kilogram equals approximately 2.2 pounds.",
+"why":"Knowing common conversions improves calculation speed."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 110 pounds. What is the weight in kilograms?",
+"answers":["45 kg","50 kg","55 kg","60 kg"],
+"correct":"50 kg",
+"explanation":"110 ÷ 2.2 = 50 kg.",
+"why":"Weight conversions are one of the most common HOSA Medical Math questions."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"Why is accurate unit conversion important in healthcare?",
+"answers":[
+"To prevent medication errors",
+"To make numbers larger",
+"To save computer memory",
+"To increase patient age"
+],
+"correct":"To prevent medication errors",
+"explanation":"Incorrect unit conversions can lead to incorrect dosages.",
+"why":"Patient safety depends on accurate mathematical calculations."
+},
 ]
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 176 pounds. What is the weight in kilograms?",
+"answers":["70 kg","75 kg","80 kg","85 kg"],
+"correct":"80 kg",
+"explanation":"Convert pounds to kilograms by dividing by 2.2.\n176 ÷ 2.2 = 80 kg.",
+"why":"Many medication dosages are calculated using kilograms."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many milligrams are in 2 grams?",
+"answers":["20 mg","200 mg","2,000 mg","20,000 mg"],
+"correct":"2,000 mg",
+"explanation":"Multiply grams by 1,000.\n2 × 1,000 = 2,000 mg.",
+"why":"Medication labels commonly switch between grams and milligrams."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many liters are equal to 2,500 mL?",
+"answers":["0.25 L","2.5 L","25 L","250 L"],
+"correct":"2.5 L",
+"explanation":"Divide milliliters by 1,000.\n2500 ÷ 1000 = 2.5 L.",
+"why":"Fluid conversions are common in IV therapy."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 88 pounds. What is the weight in kilograms?",
+"answers":["35 kg","40 kg","45 kg","50 kg"],
+"correct":"40 kg",
+"explanation":"88 ÷ 2.2 = 40 kg.",
+"why":"Weight-based calculations require kilograms."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"Which measurement is larger?",
+"answers":["500 mg","1 g","They are equal","100 mg"],
+"correct":"1 g",
+"explanation":"1 gram = 1000 milligrams, so 1 g is greater than 500 mg.",
+"why":"Understanding metric units helps prevent dosage errors."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many centimeters are in 1 meter?",
+"answers":["10","100","1,000","10,000"],
+"correct":"100",
+"explanation":"1 meter = 100 centimeters.",
+"why":"Metric length conversions appear in healthcare measurements."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 242 pounds. What is the weight in kilograms?",
+"answers":["100 kg","105 kg","110 kg","115 kg"],
+"correct":"110 kg",
+"explanation":"242 ÷ 2.2 = 110 kg.",
+"why":"Always convert pounds to kilograms before dosage calculations."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"How many milliliters are in 0.75 liters?",
+"answers":["75 mL","750 mL","7,500 mL","0.75 mL"],
+"correct":"750 mL",
+"explanation":"0.75 × 1000 = 750 mL.",
+"why":"Healthcare professionals frequently convert liters to milliliters."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"Which unit is commonly used to measure medication mass?",
+"answers":["Milligrams","Miles","Gallons","Yards"],
+"correct":"Milligrams",
+"explanation":"Many medications are measured in milligrams (mg).",
+"why":"Correct units are essential for patient safety."
+},
+
+{
+"chapter":"Medical Math Foundations",
+"question":"A patient weighs 66 pounds. What is the weight in kilograms?",
+"answers":["25 kg","30 kg","35 kg","40 kg"],
+"correct":"30 kg",
+"explanation":"66 ÷ 2.2 = 30 kg.",
+"why":"Weight conversion is one of the most common HOSA Medical Math skills."
+},
 user_progress = {
 
     "questions_completed":0,
