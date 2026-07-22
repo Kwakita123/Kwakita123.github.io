@@ -793,6 +793,422 @@ questions = [
 "explanation":"66 ÷ 2.2 = 30 kg.",
 "why":"Weight conversion is one of the most common HOSA Medical Math skills."
 },
+    {
+        "question": "A patient weighs 154 pounds. Convert the weight to kilograms. (1 kg = 2.2 lb)",
+        "choices": ["50 kg", "60 kg", "70 kg", "80 kg"],
+        "answer": "70 kg",
+        "explanation": "Divide pounds by 2.2. 154 ÷ 2.2 = 70 kg."
+    },
+
+    {
+        "question": "A medication is ordered at 500 mg. Tablets contain 250 mg each. How many tablets are needed?",
+        "choices": ["1 tablet", "2 tablets", "3 tablets", "4 tablets"],
+        "answer": "2 tablets",
+        "explanation": "500 mg ÷ 250 mg per tablet = 2 tablets."
+    },
+
+    {
+        "question": "Convert 102°F to Celsius. Formula: °C = (°F − 32) × 5/9",
+        "choices": ["35°C", "38.9°C", "40°C", "42°C"],
+        "answer": "38.9°C",
+        "explanation": "(102 − 32) × 5/9 = 38.9°C."
+    },
+
+    {
+        "question": "A syringe contains 3 mL of medication. Each mL contains 20 mg. How many mg are present?",
+        "choices": ["20 mg", "40 mg", "60 mg", "80 mg"],
+        "answer": "60 mg",
+        "explanation": "3 mL × 20 mg = 60 mg."
+    },
+
+    {
+        "question": "A solution contains 15 g of medication in 300 mL. What is the concentration?",
+        "choices": ["0.05 g/mL", "0.5 g/mL", "5 g/mL", "20 g/mL"],
+        "answer": "0.05 g/mL",
+        "explanation": "15 ÷ 300 = 0.05 g/mL."
+    },
+
+    {
+        "question": "A patient drinks 8 ounces of water every hour for 6 hours. How many ounces total?",
+        "choices": ["14 oz", "24 oz", "48 oz", "64 oz"],
+        "answer": "48 oz",
+        "explanation": "8 × 6 = 48 ounces."
+    },
+
+    {
+        "question": "A hospital room has 12 beds. 75% are occupied. How many beds are occupied?",
+        "choices": ["6", "8", "9", "10"],
+        "answer": "9",
+        "explanation": "12 × 0.75 = 9 beds."
+    },
+
+    {
+        "question": "A heart rate changes from 80 bpm to 100 bpm. What is the percent increase?",
+        "choices": ["10%", "20%", "25%", "30%"],
+        "answer": "25%",
+        "explanation": "(100-80) ÷ 80 × 100 = 25%."
+    },
+
+    {
+        "question": "Temperatures are 98°F, 99°F, 100°F, 101°F. What is the average?",
+        "choices": ["98°F", "99°F", "99.5°F", "100°F"],
+        "answer": "99.5°F",
+        "explanation": "Add values and divide by 4: 398 ÷ 4 = 99.5."
+    },
+
+    {
+        "question": "A medication costs $80. A hospital receives a 15% discount. What is the final cost?",
+        "choices": ["$65", "$68", "$72", "$75"],
+        "answer": "$68",
+        "explanation": "15% of $80 is $12. $80-$12=$68."
+    },
+    {
+        "question": "Convert 2.5 liters into milliliters.",
+        "choices": ["25 mL", "250 mL", "2500 mL", "25000 mL"],
+        "answer": "2500 mL",
+        "explanation": "1 liter equals 1000 mL. 2.5 × 1000 = 2500 mL."
+    },
+
+    {
+        "question": "A patient needs 1200 mL of fluid over 8 hours. How many mL per hour?",
+        "choices": ["100 mL/hr", "150 mL/hr", "200 mL/hr", "250 mL/hr"],
+        "answer": "150 mL/hr",
+        "explanation": "1200 mL ÷ 8 hours = 150 mL/hr."
+    },
+
+    {
+        "question": "A dosage requires 0.75 mg. Which fraction is equivalent?",
+        "choices": ["1/4 mg", "1/2 mg", "3/4 mg", "4/5 mg"],
+        "answer": "3/4 mg",
+        "explanation": "0.75 written as a fraction is 75/100, simplified to 3/4."
+    },
+
+    {
+        "question": "A patient's blood pressure is 120/80. What does the top number represent?",
+        "choices": ["Pulse rate", "Systolic pressure", "Diastolic pressure", "Oxygen level"],
+        "answer": "Systolic pressure",
+        "explanation": "The top number in blood pressure is systolic pressure."
+    },
+
+    {
+        "question": "A clinic sees 40 patients per day. How many patients are seen in 5 days?",
+        "choices": ["100", "150", "200", "250"],
+        "answer": "200",
+        "explanation": "40 patients × 5 days = 200 patients."
+    },
+
+    {
+        "question": "A medication bottle contains 100 mL. If 20 mL is used each day, how many days will it last?",
+        "choices": ["2 days", "4 days", "5 days", "10 days"],
+        "answer": "5 days",
+        "explanation": "100 mL ÷ 20 mL per day = 5 days."
+    },
+
+    {
+        "question": "A patient's oxygen level is 96%. It drops by 5%. What is the new oxygen level?",
+        "choices": ["91%", "92%", "93%", "94%"],
+        "answer": "91%",
+        "explanation": "96% - 5% = 91%."
+    },
+
+    {
+        "question": "A nurse works a 12-hour shift and takes three 20-minute breaks. How much working time remains?",
+        "choices": ["10 hours", "11 hours", "11.5 hours", "12 hours"],
+        "answer": "11 hours",
+        "explanation": "Three 20-minute breaks = 60 minutes = 1 hour. 12 - 1 = 11 hours."
+    },
+
+    {
+        "question": "A patient weighs 70 kg and is 1.75 m tall. Calculate BMI. Formula: BMI = weight ÷ height²",
+        "choices": ["18.9", "22.9", "25.5", "30.0"],
+        "answer": "22.9",
+        "explanation": "70 ÷ (1.75 × 1.75) = 22.9 BMI."
+    },
+
+    {
+        "question": "A medical supply order costs $250. Sales tax is 8%. What is the total cost?",
+        "choices": ["$258", "$265", "$270", "$275"],
+        "answer": "$270",
+        "explanation": "8% of $250 is $20. $250 + $20 = $270."
+    },
+        {
+        "question": "A patient receives 3 doses of medication per day for 7 days. How many total doses are given?",
+        "choices": ["10 doses", "14 doses", "21 doses", "24 doses"],
+        "answer": "21 doses",
+        "explanation": "3 doses per day × 7 days = 21 total doses."
+    },
+
+    {
+        "question": "A nurse measures a patient's pulse at 72 beats per minute. How many beats occur in 5 minutes?",
+        "choices": ["240 beats", "300 beats", "360 beats", "420 beats"],
+        "answer": "360 beats",
+        "explanation": "72 beats/min × 5 minutes = 360 beats."
+    },
+
+    {
+        "question": "A medical chart contains 80 pages. A nurse has completed 60 pages. What percentage is completed?",
+        "choices": ["50%", "60%", "75%", "80%"],
+        "answer": "75%",
+        "explanation": "60 ÷ 80 × 100 = 75%."
+    },
+
+    {
+        "question": "A patient drinks 1.5 liters of fluid. How many milliliters is this?",
+        "choices": ["150 mL", "500 mL", "1000 mL", "1500 mL"],
+        "answer": "1500 mL",
+        "explanation": "1 liter = 1000 mL. 1.5 × 1000 = 1500 mL."
+    },
+
+    {
+        "question": "A medication dose is increased from 200 mg to 300 mg. What is the increase?",
+        "choices": ["50 mg", "75 mg", "100 mg", "150 mg"],
+        "answer": "100 mg",
+        "explanation": "300 mg - 200 mg = 100 mg increase."
+    },
+
+    {
+        "question": "A patient has a temperature of 37°C. What is this approximately in Fahrenheit?",
+        "choices": ["90.6°F", "98.6°F", "100°F", "102°F"],
+        "answer": "98.6°F",
+        "explanation": "°F = (37 × 9/5) + 32 = 98.6°F."
+    },
+
+    {
+        "question": "A hospital orders 5 boxes of gloves. Each box contains 50 gloves. How many gloves are ordered?",
+        "choices": ["100 gloves", "200 gloves", "250 gloves", "500 gloves"],
+        "answer": "250 gloves",
+        "explanation": "5 boxes × 50 gloves = 250 gloves."
+    },
+
+    {
+        "question": "A patient needs 750 mL of IV fluid. The bag contains 1000 mL. How much remains after treatment?",
+        "choices": ["150 mL", "200 mL", "250 mL", "500 mL"],
+        "answer": "250 mL",
+        "explanation": "1000 mL - 750 mL = 250 mL."
+    },
+
+    {
+        "question": "A medical device costs $400. It is discounted by 20%. What is the new price?",
+        "choices": ["$300", "$320", "$350", "$380"],
+        "answer": "$320",
+        "explanation": "20% of $400 is $80. $400 - $80 = $320."
+    },
+
+    {
+        "question": "A nurse records 6 patient weights: 60, 65, 70, 75, 80, and 90 kg. What is the average weight?",
+        "choices": ["70 kg", "73 kg", "75 kg", "80 kg"],
+        "answer": "73 kg",
+        "explanation": "Add weights: 440 ÷ 6 = approximately 73 kg."
+    },
+
+    {
+        "question": "A patient is prescribed 1000 mg of medication. The tablets are 500 mg each. How many tablets are needed?",
+        "choices": ["1 tablet", "2 tablets", "3 tablets", "4 tablets"],
+        "answer": "2 tablets",
+        "explanation": "1000 mg ÷ 500 mg = 2 tablets."
+    },
+
+    {
+        "question": "A hospital has 250 employees. 40% work in patient care. How many employees work in patient care?",
+        "choices": ["50", "75", "100", "125"],
+        "answer": "100",
+        "explanation": "250 × 0.40 = 100 employees."
+    },
+
+    {
+        "question": "A patient’s respiratory rate is 18 breaths per minute. How many breaths occur in 10 minutes?",
+        "choices": ["90", "120", "180", "200"],
+        "answer": "180",
+        "explanation": "18 breaths/min × 10 minutes = 180 breaths."
+    },
+
+    {
+        "question": "A container holds 2 gallons of liquid. How many quarts are in the container? (1 gallon = 4 quarts)",
+        "choices": ["4 quarts", "6 quarts", "8 quarts", "10 quarts"],
+        "answer": "8 quarts",
+        "explanation": "2 gallons × 4 quarts = 8 quarts."
+    },
+
+    {
+        "question": "A patient’s heart rate decreases from 120 bpm to 90 bpm. What is the decrease?",
+        "choices": ["20 bpm", "25 bpm", "30 bpm", "40 bpm"],
+        "answer": "30 bpm",
+        "explanation": "120 - 90 = 30 bpm decrease."
+    },
+
+    {
+        "question": "A clinic schedules 15 patients every morning for 4 days. How many appointments are scheduled?",
+        "choices": ["45", "50", "60", "75"],
+        "answer": "60",
+        "explanation": "15 patients × 4 days = 60 appointments."
+    },
+
+    {
+        "question": "A medication concentration is 5 mg/mL. How many mg are in 10 mL?",
+        "choices": ["15 mg", "25 mg", "50 mg", "100 mg"],
+        "answer": "50 mg",
+        "explanation": "5 mg/mL × 10 mL = 50 mg."
+    },
+
+    {
+        "question": "A patient’s blood glucose changes from 150 mg/dL to 120 mg/dL. What is the decrease?",
+        "choices": ["20 mg/dL", "30 mg/dL", "40 mg/dL", "50 mg/dL"],
+        "answer": "30 mg/dL",
+        "explanation": "150 - 120 = 30 mg/dL."
+    },
+
+    {
+        "question": "A nurse works 36 hours in 3 days. What is the average number of hours worked per day?",
+        "choices": ["10 hours", "12 hours", "14 hours", "18 hours"],
+        "answer": "12 hours",
+        "explanation": "36 hours ÷ 3 days = 12 hours/day."
+    },
+
+    {
+        "question": "A patient takes a medication every 6 hours. How many doses are taken in 24 hours?",
+        "choices": ["2 doses", "3 doses", "4 doses", "6 doses"],
+        "answer": "4 doses",
+        "explanation": "24 hours ÷ 6 hours = 4 doses."
+    },
+        {
+        "question": "A patient weighs 176 pounds. Convert the weight to kilograms. (1 kg = 2.2 lb)",
+        "choices": ["60 kg", "70 kg", "80 kg", "90 kg"],
+        "answer": "80 kg",
+        "explanation": "176 ÷ 2.2 = 80 kg."
+    },
+
+    {
+        "question": "A nurse gives 2.5 mL of medication three times per day. How much medication is given daily?",
+        "choices": ["5 mL", "7.5 mL", "10 mL", "12.5 mL"],
+        "answer": "7.5 mL",
+        "explanation": "2.5 mL × 3 doses = 7.5 mL."
+    },
+
+    {
+        "question": "A patient's pulse is measured at 90 bpm. What does bpm stand for?",
+        "choices": ["Breaths per minute", "Beats per minute", "Blood pressure measurement", "Body pressure measurement"],
+        "answer": "Beats per minute",
+        "explanation": "BPM means beats per minute and measures heart rate."
+    },
+
+    {
+        "question": "A medication order requires 250 mg. Each capsule contains 50 mg. How many capsules are needed?",
+        "choices": ["3 capsules", "4 capsules", "5 capsules", "6 capsules"],
+        "answer": "5 capsules",
+        "explanation": "250 mg ÷ 50 mg = 5 capsules."
+    },
+
+    {
+        "question": "A hospital has 500 masks. Workers use 35% of them. How many masks are used?",
+        "choices": ["150", "175", "200", "225"],
+        "answer": "175",
+        "explanation": "500 × 0.35 = 175 masks."
+    },
+
+    {
+        "question": "A patient drinks 240 mL of water 5 times per day. How much water is consumed?",
+        "choices": ["1000 mL", "1200 mL", "1400 mL", "1500 mL"],
+        "answer": "1200 mL",
+        "explanation": "240 × 5 = 1200 mL."
+    },
+
+    {
+        "question": "Convert 3.2 kilograms into grams.",
+        "choices": ["32 g", "320 g", "3200 g", "32000 g"],
+        "answer": "3200 g",
+        "explanation": "1 kg = 1000 g. 3.2 × 1000 = 3200 g."
+    },
+
+    {
+        "question": "A patient’s temperature rises from 98°F to 101°F. What is the increase?",
+        "choices": ["2°F", "3°F", "4°F", "5°F"],
+        "answer": "3°F",
+        "explanation": "101 - 98 = 3°F."
+    },
+
+    {
+        "question": "A medical bill is $600. Insurance pays 80%. How much does insurance pay?",
+        "choices": ["$400", "$480", "$500", "$520"],
+        "answer": "$480",
+        "explanation": "600 × 0.80 = $480."
+    },
+
+    {
+        "question": "A patient has 16 ounces of medication solution. Convert this to cups. (1 cup = 8 ounces)",
+        "choices": ["1 cup", "2 cups", "3 cups", "4 cups"],
+        "answer": "2 cups",
+        "explanation": "16 ÷ 8 = 2 cups."
+    },
+
+    {
+        "question": "A nurse checks 8 patients every hour for 6 hours. How many patients are checked?",
+        "choices": ["40", "48", "56", "64"],
+        "answer": "48",
+        "explanation": "8 × 6 = 48 patients."
+    },
+
+    {
+        "question": "A medication is diluted from 100 mL to 250 mL. How much liquid was added?",
+        "choices": ["100 mL", "125 mL", "150 mL", "200 mL"],
+        "answer": "150 mL",
+        "explanation": "250 - 100 = 150 mL added."
+    },
+
+    {
+        "question": "A patient's oxygen saturation changes from 92% to 97%. What is the increase?",
+        "choices": ["3%", "5%", "7%", "10%"],
+        "answer": "5%",
+        "explanation": "97 - 92 = 5% increase."
+    },
+
+    {
+        "question": "A nurse works 8 hours per shift for 5 shifts. How many hours worked?",
+        "choices": ["30 hours", "35 hours", "40 hours", "45 hours"],
+        "answer": "40 hours",
+        "explanation": "8 × 5 = 40 hours."
+    },
+
+    {
+        "question": "A prescription says take 1 tablet every 8 hours. How many tablets are taken per day?",
+        "choices": ["2 tablets", "3 tablets", "4 tablets", "8 tablets"],
+        "answer": "3 tablets",
+        "explanation": "24 ÷ 8 = 3 tablets."
+    },
+
+    {
+        "question": "A hospital room temperature is 22°C. Which scale is this measured in?",
+        "choices": ["Fahrenheit", "Celsius", "Kelvin", "Rankine"],
+        "answer": "Celsius",
+        "explanation": "°C is the Celsius temperature scale."
+    },
+
+    {
+        "question": "A patient needs 1500 mL of fluid. The IV runs at 125 mL/hr. How many hours will it take?",
+        "choices": ["10 hours", "12 hours", "15 hours", "20 hours"],
+        "answer": "12 hours",
+        "explanation": "1500 ÷ 125 = 12 hours."
+    },
+
+    {
+        "question": "A clinic has 90 appointments. 20% are canceled. How many appointments remain?",
+        "choices": ["60", "70", "72", "80"],
+        "answer": "72",
+        "explanation": "20% of 90 is 18. 90 - 18 = 72."
+    },
+
+    {
+        "question": "A medication costs $120 and increases by 10%. What is the new cost?",
+        "choices": ["$125", "$130", "$132", "$140"],
+        "answer": "$132",
+        "explanation": "10% of $120 is $12. $120 + $12 = $132."
+    },
+
+    {
+        "question": "A patient has a BMI of 24. What category does this fall into?",
+        "choices": ["Underweight", "Healthy range", "Overweight", "Obese"],
+        "answer": "Healthy range",
+        "explanation": "A BMI between about 18.5 and 24.9 is considered the healthy range."
+    },
 user_progress = {
 
     "questions_completed":0,
