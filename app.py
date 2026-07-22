@@ -504,850 +504,882 @@ HOSA Medical Math questions.
 questions = [
 
 {
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 154 pounds. What is the weight in kilograms?",
-"answers":["50 kg","60 kg","70 kg","90 kg"],
-"correct":"70 kg",
-"explanation":
-"To convert pounds to kilograms, divide by 2.2.\n\n154 ÷ 2.2 = 70 kg.",
-"why":
-"Healthcare uses standard units. Dividing by 2.2 keeps the measurement accurate."
+    "chapter":"Medical Math Foundations",
+    "question":"A patient weighs 176 pounds. What is the weight in kilograms?",
+    "answers":["70 kg","75 kg","80 kg","85 kg"],
+    "correct":"80 kg",
+    "explanation":"176 ÷ 2.2 = 80 kg.",
+    "why":"Many medication calculations require weight in kilograms."
 },
 
-
 {
-"chapter":"Percentages",
-"question":"What is 25% of 200?",
-"answers":["25","50","75","100"],
-"correct":"50",
-"explanation":
-"Convert 25% into decimal form:\n25 ÷ 100 = 0.25\n\n200 × 0.25 = 50.",
-"why":
-"Percent means 'out of 100', so we find the matching fraction of the total."
+    "chapter":"Medical Math Foundations",
+    "question":"How many milligrams are in 2 grams?",
+    "answers":["20 mg","200 mg","2000 mg","20000 mg"],
+    "correct":"2000 mg",
+    "explanation":"1 gram = 1000 mg. 2 × 1000 = 2000 mg.",
+    "why":"Metric conversions are important for medication accuracy."
 },
 
-
 {
-"chapter":"Geometry",
-"question":"A rectangle has a length of 8cm and width of 5cm. What is the area?",
-"answers":["13 cm²","20 cm²","40 cm²","80 cm²"],
-"correct":"40 cm²",
-"explanation":
-"Area = length × width.\n\n8 × 5 = 40 cm².",
-"why":
-"Area measures the amount of space inside a shape."
+    "chapter":"Medical Math Foundations",
+    "question":"How many milliliters are in 2.5 liters?",
+    "answers":["250 mL","2500 mL","25 mL","25000 mL"],
+    "correct":"2500 mL",
+    "explanation":"1 liter = 1000 mL. 2.5 × 1000 = 2500 mL.",
+    "why":"Healthcare workers frequently convert fluid measurements."
 },
 
-
 {
-"chapter":"IV Flow Rate",
-"question":"500mL of fluid is given over 5 hours. What is the rate?",
-"answers":["50mL/hr","100mL/hr","200mL/hr","500mL/hr"],
-"correct":"100mL/hr",
-"explanation":
-"Rate = Volume ÷ Time.\n\n500 ÷ 5 = 100mL/hr.",
-"why":
-"Dividing by time tells us how much fluid is delivered each hour."
+    "chapter":"Medical Math Foundations",
+    "question":"A patient weighs 132 pounds. What is the weight in kilograms?",
+    "answers":["50 kg","60 kg","70 kg","80 kg"],
+    "correct":"60 kg",
+    "explanation":"132 ÷ 2.2 = 60 kg.",
+    "why":"Correct weight conversions are needed for safe dosing."
 },
 
-
 {
-"chapter":"Fractions",
-"question":"What is 1/2 as a decimal?",
-"answers":["0.25","0.5","1.5","2"],
-"correct":"0.5",
-"explanation":
-"1 divided by 2 equals 0.5.",
-"why":
-"Decimals represent parts of a whole."
+    "chapter":"Dosage",
+    "question":"A medication order is 500 mg. Each tablet contains 250 mg. How many tablets are needed?",
+    "answers":["1 tablet","2 tablets","3 tablets","4 tablets"],
+    "correct":"2 tablets",
+    "explanation":"500 ÷ 250 = 2 tablets.",
+    "why":"Dosage calculations determine correct medication amounts."
 },
 
-
 {
-"chapter":"Statistics",
-"question":"Find the average of 10, 20, and 30.",
-"answers":["15","20","25","30"],
-"correct":"20",
-"explanation":
-"Add values and divide by amount:\n60 ÷ 3 = 20.",
-"why":
-"Mean gives the center value of a data set."
+    "chapter":"Temperature Conversion",
+    "question":"Convert 102°F to Celsius.",
+    "answers":["35°C","38.9°C","40°C","42°C"],
+    "correct":"38.9°C",
+    "explanation":"(102 - 32) × 5/9 = 38.9°C.",
+    "why":"Healthcare uses temperature conversions between systems."
 },
 
-
 {
-"chapter":"Ratios",
-"question":"A ratio is used to compare what?",
-"answers":["Numbers","Colors","Shapes","Letters"],
-"correct":"Numbers",
-"explanation":
-"Ratios compare two quantities.",
-"why":
-"Healthcare calculations often compare measurements."
+    "chapter":"IV Flow Rate",
+    "question":"A patient receives 1200 mL over 8 hours. What is the flow rate?",
+    "answers":["100 mL/hr","150 mL/hr","200 mL/hr","250 mL/hr"],
+    "correct":"150 mL/hr",
+    "explanation":"1200 ÷ 8 = 150 mL/hr.",
+    "why":"IV calculations control fluid delivery speed."
 },
 
-
 {
-"chapter":"Dosage",
-"question":"Desired dose is 500mg and available dose is 250mg in 5mL. How much is needed?",
-"answers":["5mL","10mL","15mL","20mL"],
-"correct":"10mL",
-"explanation":
-"500 ÷ 250 × 5 = 10mL.",
-"why":
-"The ratio between medicine amount and volume stays constant."
+    "chapter":"Percentages",
+    "question":"A hospital has 200 patients. 25% need additional monitoring. How many patients is this?",
+    "answers":["25","50","75","100"],
+    "correct":"50",
+    "explanation":"200 × 0.25 = 50 patients.",
+    "why":"Percentages help analyze medical data."
 },
 
+{
+    "chapter":"Statistics",
+    "question":"Find the average of 40, 50, and 60.",
+    "answers":["45","50","55","60"],
+    "correct":"50",
+    "explanation":"(40 + 50 + 60) ÷ 3 = 50.",
+    "why":"Averages summarize groups of data."
+},
 
 {
-"chapter":"Probability",
-"question":"Probability values are between:",
-"answers":["0 and 1","1 and 10","10 and 100","-1 and 1"],
-"correct":"0 and 1",
-"explanation":
-"Probability represents chance.",
-"why":
-"0 means impossible and 1 means certain."
+    "chapter":"Volume",
+    "question":"A container is 5 cm long, 4 cm wide, and 3 cm tall. What is the volume?",
+    "answers":["12 cm³","20 cm³","60 cm³","120 cm³"],
+    "correct":"60 cm³",
+    "explanation":"Volume = length × width × height.\n5 × 4 × 3 = 60 cm³.",
+    "why":"Volume measures the space inside an object."
+},
+
+{
+    "chapter":"Fractions",
+    "question":"What is 3/4 as a decimal?",
+    "answers":["0.25","0.50","0.75","1.25"],
+    "correct":"0.75",
+    "explanation":"3 ÷ 4 = 0.75.",
+    "why":"Decimals are commonly used in medical measurements."
+},
+
+{
+    "chapter":"Ratios",
+    "question":"A medication ratio is 200 mg : 4 mL. How many mg are in 1 mL?",
+    "answers":["25 mg","50 mg","100 mg","200 mg"],
+    "correct":"50 mg",
+    "explanation":"200 ÷ 4 = 50 mg/mL.",
+    "why":"Ratios help calculate medication concentration."
+},
+
+{
+    "chapter":"Probability",
+    "question":"A patient has a 75% chance of recovery. What decimal represents this?",
+    "answers":["0.25","0.50","0.75","1.75"],
+    "correct":"0.75",
+    "explanation":"75% ÷ 100 = 0.75.",
+    "why":"Probability can be represented as decimals."
+},
+
+{
+    "chapter":"Algebra",
+    "question":"Solve: x + 8 = 15",
+    "answers":["5","7","8","23"],
+    "correct":"7",
+    "explanation":"Subtract 8 from both sides. x = 7.",
+    "why":"Algebra helps solve unknown medical values."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication contains 20 mg/mL. How many mL are needed for 100 mg?",
+    "answers":["2 mL","5 mL","10 mL","20 mL"],
+    "correct":"5 mL",
+    "explanation":"100 ÷ 20 = 5 mL.",
+    "why":"Medication concentration calculations prevent errors."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 4500 mL into liters.",
+    "answers":["0.45 L","4.5 L","45 L","450 L"],
+    "correct":"4.5 L",
+    "explanation":"4500 ÷ 1000 = 4.5 L.",
+    "why":"Fluid measurements often require unit conversion."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"What is the median of 10, 20, 30, 40, 50?",
+    "answers":["10","20","30","50"],
+    "correct":"30",
+    "explanation":"The middle number is 30.",
+    "why":"Median helps analyze healthcare data."
+},
+
+{
+    "chapter":"Percentage",
+    "question":"A $100 medical item increases by 10%. What is the new price?",
+    "answers":["$105","$110","$115","$120"],
+    "correct":"$110",
+    "explanation":"10% of 100 is 10. 100 + 10 = 110.",
+    "why":"Percent changes are used in healthcare costs."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A 500 mL IV bag runs at 50 mL/hr. How many hours will it last?",
+    "answers":["5 hours","10 hours","15 hours","20 hours"],
+    "correct":"10 hours",
+    "explanation":"500 ÷ 50 = 10 hours.",
+    "why":"IV calculations determine treatment duration."
+},
+{
+    "chapter":"Medical Math Foundations",
+    "question":"A patient weighs 242 pounds. Convert the weight to kilograms.",
+    "answers":["90 kg","100 kg","110 kg","120 kg"],
+    "correct":"110 kg",
+    "explanation":"242 ÷ 2.2 = 110 kg.",
+    "why":"Weight conversion is required for many medication calculations."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient needs 750 mg of medication. Each tablet contains 250 mg. How many tablets are needed?",
+    "answers":["1 tablet","2 tablets","3 tablets","4 tablets"],
+    "correct":"3 tablets",
+    "explanation":"750 ÷ 250 = 3 tablets.",
+    "why":"Dosage calculations ensure the correct amount of medication is given."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A hospital has 500 gloves. 40% are used. How many gloves are used?",
+    "answers":["100","150","200","250"],
+    "correct":"200",
+    "explanation":"500 × 0.40 = 200 gloves.",
+    "why":"Percentages help calculate portions of medical supplies."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A patient receives 900 mL of IV fluid in 6 hours. What is the rate?",
+    "answers":["100 mL/hr","150 mL/hr","200 mL/hr","250 mL/hr"],
+    "correct":"150 mL/hr",
+    "explanation":"900 ÷ 6 = 150 mL/hr.",
+    "why":"IV rates control how quickly fluids are delivered."
+},
+
+{
+    "chapter":"Temperature Conversion",
+    "question":"Convert 98.6°F to Celsius.",
+    "answers":["35°C","37°C","39°C","42°C"],
+    "correct":"37°C",
+    "explanation":"98.6°F is approximately 37°C.",
+    "why":"Healthcare workers convert temperatures between Fahrenheit and Celsius."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"A nurse records patient ages: 20, 30, 40, 50. What is the average age?",
+    "answers":["30","35","40","45"],
+    "correct":"35",
+    "explanation":"(20 + 30 + 40 + 50) ÷ 4 = 35.",
+    "why":"Average values summarize patient data."
+},
+
+{
+    "chapter":"Fractions",
+    "question":"What fraction represents 0.5?",
+    "answers":["1/4","1/2","3/4","1"],
+    "correct":"1/2",
+    "explanation":"0.5 equals one-half.",
+    "why":"Fractions and decimals represent parts of a whole."
+},
+
+{
+    "chapter":"Ratios",
+    "question":"A solution contains 300 mg in 6 mL. How many mg are in 1 mL?",
+    "answers":["25 mg","50 mg","75 mg","100 mg"],
+    "correct":"50 mg",
+    "explanation":"300 ÷ 6 = 50 mg/mL.",
+    "why":"Medication concentration uses ratios."
+},
+
+{
+    "chapter":"Algebra",
+    "question":"Solve: x × 5 = 25",
+    "answers":["3","4","5","6"],
+    "correct":"5",
+    "explanation":"25 ÷ 5 = 5.",
+    "why":"Algebra helps find unknown measurements."
+},
+
+{
+    "chapter":"Geometry",
+    "question":"A medical tray is 12 inches long and 5 inches wide. What is the area?",
+    "answers":["17 in²","50 in²","60 in²","120 in²"],
+    "correct":"60 in²",
+    "explanation":"Area = length × width. 12 × 5 = 60 in².",
+    "why":"Area calculations measure surfaces and spaces."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"How many milligrams are in 5 grams?",
+    "answers":["50 mg","500 mg","5000 mg","50000 mg"],
+    "correct":"5000 mg",
+    "explanation":"5 × 1000 = 5000 mg.",
+    "why":"Metric conversions are important for medication measurements."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication order is 1000 mg. Capsules contain 200 mg each. How many capsules are needed?",
+    "answers":["3 capsules","4 capsules","5 capsules","6 capsules"],
+    "correct":"5 capsules",
+    "explanation":"1000 ÷ 200 = 5 capsules.",
+    "why":"Correct dosage prevents medication mistakes."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A clinic has 80 patients. 25% leave early. How many patients leave early?",
+    "answers":["10","20","30","40"],
+    "correct":"20",
+    "explanation":"80 × 0.25 = 20.",
+    "why":"Percentages measure parts of a group."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A 1000 mL IV bag runs at 125 mL/hr. How long will it last?",
+    "answers":["4 hours","6 hours","8 hours","10 hours"],
+    "correct":"8 hours",
+    "explanation":"1000 ÷ 125 = 8 hours.",
+    "why":"IV calculations determine fluid administration time."
+},
+
+{
+    "chapter":"Probability",
+    "question":"A test has 8 possible outcomes and 2 successful outcomes. What is the probability?",
+    "answers":["0.10","0.25","0.50","0.75"],
+    "correct":"0.25",
+    "explanation":"2 ÷ 8 = 0.25.",
+    "why":"Probability measures the chance of an event."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the mode: 2, 3, 3, 4, 5.",
+    "answers":["2","3","4","5"],
+    "correct":"3",
+    "explanation":"The mode is the value that appears most often.",
+    "why":"Mode identifies the most common value in data."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 0.5 liters into milliliters.",
+    "answers":["50 mL","500 mL","5000 mL","5 mL"],
+    "correct":"500 mL",
+    "explanation":"0.5 × 1000 = 500 mL.",
+    "why":"Fluid conversions are common in healthcare."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient receives 4 mL of medication twice daily. How much medication is given each day?",
+    "answers":["4 mL","6 mL","8 mL","12 mL"],
+    "correct":"8 mL",
+    "explanation":"4 × 2 = 8 mL.",
+    "why":"Daily dosage calculations determine total medication amount."
+},
+
+{
+    "chapter":"BMI",
+    "question":"A patient weighs 80 kg and is 2 meters tall. Calculate BMI.",
+    "answers":["10","20","30","40"],
+    "correct":"20",
+    "explanation":"BMI = 80 ÷ (2 × 2) = 20.",
+    "why":"BMI compares weight and height measurements."
+},
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 3 kilograms into grams.",
+    "answers":["30 g","300 g","3000 g","30000 g"],
+    "correct":"3000 g",
+    "explanation":"1 kilogram = 1000 grams. 3 × 1000 = 3000 g.",
+    "why":"Metric conversions are used frequently in healthcare."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication order requires 800 mg. Each tablet contains 400 mg. How many tablets are needed?",
+    "answers":["1 tablet","2 tablets","3 tablets","4 tablets"],
+    "correct":"2 tablets",
+    "explanation":"800 ÷ 400 = 2 tablets.",
+    "why":"Medication calculations determine the correct dose."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A hospital has 1000 supplies. 15% are damaged. How many supplies are damaged?",
+    "answers":["100","150","200","250"],
+    "correct":"150",
+    "explanation":"1000 × 0.15 = 150 supplies.",
+    "why":"Percentages help track healthcare inventory."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A patient receives 2000 mL of fluid over 10 hours. What is the rate?",
+    "answers":["100 mL/hr","150 mL/hr","200 mL/hr","250 mL/hr"],
+    "correct":"200 mL/hr",
+    "explanation":"2000 ÷ 10 = 200 mL/hr.",
+    "why":"IV rates control fluid delivery."
+},
+
+{
+    "chapter":"Temperature Conversion",
+    "question":"Convert 104°F to Celsius.",
+    "answers":["35°C","40°C","45°C","50°C"],
+    "correct":"40°C",
+    "explanation":"(104 - 32) × 5/9 = 40°C.",
+    "why":"Temperature conversion is important for patient assessment."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the average of 70, 80, and 90.",
+    "answers":["75","80","85","90"],
+    "correct":"80",
+    "explanation":"(70 + 80 + 90) ÷ 3 = 80.",
+    "why":"Averages summarize groups of measurements."
+},
+
+{
+    "chapter":"Fractions",
+    "question":"What is 1/4 as a decimal?",
+    "answers":["0.20","0.25","0.50","0.75"],
+    "correct":"0.25",
+    "explanation":"1 ÷ 4 = 0.25.",
+    "why":"Decimals are used when measuring medication amounts."
+},
+
+{
+    "chapter":"Ratios",
+    "question":"A medication contains 600 mg in 12 mL. What is the concentration?",
+    "answers":["25 mg/mL","50 mg/mL","75 mg/mL","100 mg/mL"],
+    "correct":"50 mg/mL",
+    "explanation":"600 ÷ 12 = 50 mg/mL.",
+    "why":"Concentration calculations determine medication strength."
+},
+
+{
+    "chapter":"Algebra",
+    "question":"Solve: x - 12 = 20",
+    "answers":["8","20","32","40"],
+    "correct":"32",
+    "explanation":"Add 12 to both sides. x = 32.",
+    "why":"Algebra helps find missing healthcare values."
+},
+
+{
+    "chapter":"Geometry",
+    "question":"A room is 10 meters long and 6 meters wide. What is the area?",
+    "answers":["16 m²","40 m²","60 m²","100 m²"],
+    "correct":"60 m²",
+    "explanation":"Area = length × width. 10 × 6 = 60 m².",
+    "why":"Area measures the size of a space."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"How many milliliters are in 4 liters?",
+    "answers":["40 mL","400 mL","4000 mL","40000 mL"],
+    "correct":"4000 mL",
+    "explanation":"4 × 1000 = 4000 mL.",
+    "why":"Fluid measurements must often be converted."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient needs 250 mg. The medication concentration is 50 mg/mL. How many mL are needed?",
+    "answers":["2 mL","5 mL","10 mL","15 mL"],
+    "correct":"5 mL",
+    "explanation":"250 ÷ 50 = 5 mL.",
+    "why":"Medication volume depends on concentration."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A patient's oxygen level changes from 90% to 95%. What is the increase?",
+    "answers":["3%","5%","7%","10%"],
+    "correct":"5%",
+    "explanation":"95 - 90 = 5%.",
+    "why":"Changes in patient measurements are calculated using differences."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A 750 mL IV bag runs at 75 mL/hr. How long will it last?",
+    "answers":["5 hours","8 hours","10 hours","12 hours"],
+    "correct":"10 hours",
+    "explanation":"750 ÷ 75 = 10 hours.",
+    "why":"IV calculations determine treatment duration."
+},
+
+{
+    "chapter":"Probability",
+    "question":"A medication works successfully 9 out of 10 times. What is the probability?",
+    "answers":["0.09","0.50","0.90","1.00"],
+    "correct":"0.90",
+    "explanation":"9 ÷ 10 = 0.90.",
+    "why":"Probability represents likelihood."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the median: 5, 10, 15, 20, 25.",
+    "answers":["5","10","15","25"],
+    "correct":"15",
+    "explanation":"The middle number is 15.",
+    "why":"Median helps analyze healthcare data sets."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 2500 mg into grams.",
+    "answers":["0.25 g","2.5 g","25 g","250 g"],
+    "correct":"2.5 g",
+    "explanation":"2500 ÷ 1000 = 2.5 g.",
+    "why":"Medication units must be converted accurately."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient takes 2 tablets three times per day. How many tablets are taken daily?",
+    "answers":["3 tablets","4 tablets","6 tablets","8 tablets"],
+    "correct":"6 tablets",
+    "explanation":"2 × 3 = 6 tablets.",
+    "why":"Daily medication totals help prevent errors."
+},
+
+{
+    "chapter":"BMI",
+    "question":"A patient weighs 90 kg and is 1.5 meters tall. Calculate BMI.",
+    "answers":["20","30","40","50"],
+    "correct":"40",
+    "explanation":"90 ÷ (1.5 × 1.5) = 40.",
+    "why":"BMI compares weight and height."
+},
+
+{
+    "chapter":"Graphs and Data",
+    "question":"A chart shows patients increasing from 50 to 75. What is the increase?",
+    "answers":["15","20","25","30"],
+    "correct":"25",
+    "explanation":"75 - 50 = 25.",
+    "why":"Healthcare workers analyze changes in data trends."
+},
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 5.5 kilograms into grams.",
+    "answers":["55 g","550 g","5500 g","55000 g"],
+    "correct":"5500 g",
+    "explanation":"1 kg = 1000 g. 5.5 × 1000 = 5500 g.",
+    "why":"Metric conversions are necessary for accurate healthcare measurements."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication order requires 1200 mg. Each capsule contains 300 mg. How many capsules are needed?",
+    "answers":["2 capsules","3 capsules","4 capsules","5 capsules"],
+    "correct":"4 capsules",
+    "explanation":"1200 ÷ 300 = 4 capsules.",
+    "why":"Dosage calculations determine the correct medication amount."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A hospital has 800 masks. 25% are used. How many masks are used?",
+    "answers":["100","150","200","250"],
+    "correct":"200",
+    "explanation":"800 × 0.25 = 200 masks.",
+    "why":"Percent calculations are used for supply tracking."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A patient receives 1500 mL over 12 hours. What is the flow rate?",
+    "answers":["100 mL/hr","125 mL/hr","150 mL/hr","200 mL/hr"],
+    "correct":"125 mL/hr",
+    "explanation":"1500 ÷ 12 = 125 mL/hr.",
+    "why":"IV calculations determine how fast fluids are delivered."
+},
+
+{
+    "chapter":"Temperature Conversion",
+    "question":"Convert 86°F to Celsius.",
+    "answers":["20°C","25°C","30°C","35°C"],
+    "correct":"30°C",
+    "explanation":"(86 - 32) × 5/9 = 30°C.",
+    "why":"Healthcare uses both Fahrenheit and Celsius."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the average of 65, 70, 75, and 80.",
+    "answers":["70","72.5","75","80"],
+    "correct":"72.5",
+    "explanation":"(65 + 70 + 75 + 80) ÷ 4 = 72.5.",
+    "why":"Average values summarize patient information."
+},
+
+{
+    "chapter":"Fractions",
+    "question":"What is 2/5 as a decimal?",
+    "answers":["0.20","0.40","0.50","0.75"],
+    "correct":"0.40",
+    "explanation":"2 ÷ 5 = 0.40.",
+    "why":"Fractions are often converted into decimals in calculations."
+},
+
+{
+    "chapter":"Ratios",
+    "question":"A solution contains 400 mg in 8 mL. What is the concentration?",
+    "answers":["25 mg/mL","50 mg/mL","75 mg/mL","100 mg/mL"],
+    "correct":"50 mg/mL",
+    "explanation":"400 ÷ 8 = 50 mg/mL.",
+    "why":"Concentration calculations are important for medications."
+},
+
+{
+    "chapter":"Algebra",
+    "question":"Solve: 3x = 21",
+    "answers":["5","6","7","8"],
+    "correct":"7",
+    "explanation":"21 ÷ 3 = 7.",
+    "why":"Algebra helps solve unknown measurements."
+},
+
+{
+    "chapter":"Geometry",
+    "question":"A rectangle has a length of 15 cm and width of 4 cm. What is the area?",
+    "answers":["19 cm²","40 cm²","60 cm²","75 cm²"],
+    "correct":"60 cm²",
+    "explanation":"15 × 4 = 60 cm².",
+    "why":"Area calculations measure two-dimensional space."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 7500 mL into liters.",
+    "answers":["0.75 L","7.5 L","75 L","750 L"],
+    "correct":"7.5 L",
+    "explanation":"7500 ÷ 1000 = 7.5 L.",
+    "why":"Fluid conversions are common in healthcare."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication concentration is 10 mg/mL. How many mL are needed for 500 mg?",
+    "answers":["25 mL","50 mL","75 mL","100 mL"],
+    "correct":"50 mL",
+    "explanation":"500 ÷ 10 = 50 mL.",
+    "why":"Medication concentration determines volume needed."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A patient's heart rate decreases from 100 bpm to 80 bpm. What is the decrease?",
+    "answers":["10 bpm","20 bpm","30 bpm","40 bpm"],
+    "correct":"20 bpm",
+    "explanation":"100 - 80 = 20 bpm.",
+    "why":"Healthcare workers monitor changes in vital signs."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A 2400 mL IV order is given over 24 hours. What is the hourly rate?",
+    "answers":["50 mL/hr","100 mL/hr","150 mL/hr","200 mL/hr"],
+    "correct":"100 mL/hr",
+    "explanation":"2400 ÷ 24 = 100 mL/hr.",
+    "why":"IV formulas calculate safe fluid delivery."
+},
+
+{
+    "chapter":"Probability",
+    "question":"A patient test has 3 successful results out of 4 trials. What is the probability?",
+    "answers":["0.25","0.50","0.75","1.25"],
+    "correct":"0.75",
+    "explanation":"3 ÷ 4 = 0.75.",
+    "why":"Probability measures chances using numbers."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the mode: 10, 15, 15, 20, 25.",
+    "answers":["10","15","20","25"],
+    "correct":"15",
+    "explanation":"15 appears more than any other number.",
+    "why":"Mode identifies the most common value."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 0.25 kilograms into grams.",
+    "answers":["25 g","250 g","2500 g","0.25 g"],
+    "correct":"250 g",
+    "explanation":"0.25 × 1000 = 250 g.",
+    "why":"Small metric conversions are common in medical math."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient receives 15 mL of medication per day for 5 days. How much medication is needed?",
+    "answers":["50 mL","75 mL","100 mL","150 mL"],
+    "correct":"75 mL",
+    "explanation":"15 × 5 = 75 mL.",
+    "why":"Total dosage calculations help plan medication supplies."
+},
+
+{
+    "chapter":"BMI",
+    "question":"A patient weighs 72 kg and is 1.8 meters tall. Calculate BMI.",
+    "answers":["18.2","22.2","25.5","30.0"],
+    "correct":"22.2",
+    "explanation":"72 ÷ (1.8 × 1.8) = 22.2.",
+    "why":"BMI compares weight and height."
+},
+
+{
+    "chapter":"Graphs and Data",
+    "question":"A hospital records 120 patients Monday and 150 Tuesday. How many more patients were seen Tuesday?",
+    "answers":["20","25","30","35"],
+    "correct":"30",
+    "explanation":"150 - 120 = 30.",
+    "why":"Data comparisons help identify healthcare trends."
+},
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 6.2 liters into milliliters.",
+    "answers":["62 mL","620 mL","6200 mL","62000 mL"],
+    "correct":"6200 mL",
+    "explanation":"1 liter = 1000 mL. 6.2 × 1000 = 6200 mL.",
+    "why":"Fluid measurements must often be converted in healthcare."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A patient needs 900 mg of medication. Each tablet contains 150 mg. How many tablets are needed?",
+    "answers":["3 tablets","5 tablets","6 tablets","9 tablets"],
+    "correct":"6 tablets",
+    "explanation":"900 ÷ 150 = 6 tablets.",
+    "why":"Dosage calculations help provide accurate medication amounts."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A clinic has 400 patients. 30% require follow-up visits. How many patients require follow-up?",
+    "answers":["80","100","120","150"],
+    "correct":"120",
+    "explanation":"400 × 0.30 = 120 patients.",
+    "why":"Percentages are used to analyze patient populations."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A patient receives 1800 mL over 9 hours. What is the flow rate?",
+    "answers":["100 mL/hr","150 mL/hr","200 mL/hr","250 mL/hr"],
+    "correct":"200 mL/hr",
+    "explanation":"1800 ÷ 9 = 200 mL/hr.",
+    "why":"IV calculations control fluid administration."
+},
+
+{
+    "chapter":"Temperature Conversion",
+    "question":"Convert 95°F to Celsius.",
+    "answers":["25°C","30°C","35°C","40°C"],
+    "correct":"35°C",
+    "explanation":"(95 - 32) × 5/9 = 35°C.",
+    "why":"Temperature conversion is used when reading medical equipment."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the average of 90, 85, and 95.",
+    "answers":["85","90","92","95"],
+    "correct":"90",
+    "explanation":"(90 + 85 + 95) ÷ 3 = 90.",
+    "why":"Average values help summarize healthcare measurements."
+},
+
+{
+    "chapter":"Fractions",
+    "question":"What is 3/5 as a decimal?",
+    "answers":["0.30","0.50","0.60","0.80"],
+    "correct":"0.60",
+    "explanation":"3 ÷ 5 = 0.60.",
+    "why":"Decimals allow precise medical calculations."
+},
+
+{
+    "chapter":"Ratios",
+    "question":"A medication contains 800 mg in 16 mL. What is the concentration?",
+    "answers":["25 mg/mL","40 mg/mL","50 mg/mL","80 mg/mL"],
+    "correct":"50 mg/mL",
+    "explanation":"800 ÷ 16 = 50 mg/mL.",
+    "why":"Medication strength is determined using ratios."
+},
+
+{
+    "chapter":"Algebra",
+    "question":"Solve: x ÷ 4 = 8",
+    "answers":["16","24","32","40"],
+    "correct":"32",
+    "explanation":"8 × 4 = 32.",
+    "why":"Algebra helps solve unknown values."
+},
+
+{
+    "chapter":"Geometry",
+    "question":"A storage box is 8 cm long, 5 cm wide, and 4 cm tall. What is the volume?",
+    "answers":["80 cm³","120 cm³","160 cm³","200 cm³"],
+    "correct":"160 cm³",
+    "explanation":"8 × 5 × 4 = 160 cm³.",
+    "why":"Volume measures the amount of space inside an object."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"Convert 3500 mg into grams.",
+    "answers":["0.35 g","3.5 g","35 g","350 g"],
+    "correct":"3.5 g",
+    "explanation":"3500 ÷ 1000 = 3.5 g.",
+    "why":"Medication units frequently require conversion."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication order is 2 grams. How many milligrams is this?",
+    "answers":["200 mg","500 mg","1000 mg","2000 mg"],
+    "correct":"2000 mg",
+    "explanation":"2 × 1000 = 2000 mg.",
+    "why":"Healthcare uses both grams and milligrams."
+},
+
+{
+    "chapter":"Percentages",
+    "question":"A medical bill is $500. Insurance covers 70%. How much does insurance pay?",
+    "answers":["$250","$300","$350","$400"],
+    "correct":"$350",
+    "explanation":"500 × 0.70 = $350.",
+    "why":"Percent calculations are used in healthcare costs."
+},
+
+{
+    "chapter":"IV Flow Rate",
+    "question":"A 1000 mL IV bag runs at 250 mL/hr. How long will it last?",
+    "answers":["2 hours","4 hours","6 hours","8 hours"],
+    "correct":"4 hours",
+    "explanation":"1000 ÷ 250 = 4 hours.",
+    "why":"IV formulas determine treatment duration."
+},
+
+{
+    "chapter":"Probability",
+    "question":"A treatment works 18 times out of 20 trials. What is the probability?",
+    "answers":["0.50","0.75","0.90","1.20"],
+    "correct":"0.90",
+    "explanation":"18 ÷ 20 = 0.90.",
+    "why":"Probability measures likelihood of outcomes."
+},
+
+{
+    "chapter":"Statistics",
+    "question":"Find the median: 12, 18, 25, 30, 35.",
+    "answers":["12","18","25","35"],
+    "correct":"25",
+    "explanation":"The middle value is 25.",
+    "why":"Median helps organize and interpret data."
+},
+
+{
+    "chapter":"Medical Math Foundations",
+    "question":"How many centimeters are in 3 meters?",
+    "answers":["30 cm","100 cm","300 cm","3000 cm"],
+    "correct":"300 cm",
+    "explanation":"1 meter = 100 centimeters. 3 × 100 = 300 cm.",
+    "why":"Metric measurements are used in healthcare."
+},
+
+{
+    "chapter":"Dosage",
+    "question":"A medication contains 25 mg/mL. How many mL are needed for 250 mg?",
+    "answers":["5 mL","10 mL","15 mL","20 mL"],
+    "correct":"10 mL",
+    "explanation":"250 ÷ 25 = 10 mL.",
+    "why":"Medication concentration determines the correct volume."
+},
+
+{
+    "chapter":"BMI",
+    "question":"A patient weighs 100 kg and is 2 meters tall. Calculate BMI.",
+    "answers":["20","25","30","50"],
+    "correct":"25",
+    "explanation":"100 ÷ (2 × 2) = 25.",
+    "why":"BMI calculations compare weight and height."
+},
+
+{
+    "chapter":"Graphs and Data",
+    "question":"A chart shows patient visits increasing from 200 to 260. What is the increase?",
+    "answers":["40","50","60","70"],
+    "correct":"60",
+    "explanation":"260 - 200 = 60.",
+    "why":"Healthcare workers analyze changes in data.",
 }
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 154 pounds. What is the weight in kilograms?",
-"answers":["60 kg","65 kg","70 kg","75 kg"],
-"correct":"70 kg",
-"explanation":"Convert pounds to kilograms by dividing by 2.2.\n154 ÷ 2.2 = 70 kg.",
-"why":"Healthcare professionals commonly use kilograms when calculating medication dosages."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 220 pounds. What is the weight in kilograms?",
-"answers":["90 kg","95 kg","100 kg","105 kg"],
-"correct":"100 kg",
-"explanation":"220 ÷ 2.2 = 100 kg.",
-"why":"Weight conversions are used for dosage calculations."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 132 pounds. What is the weight in kilograms?",
-"answers":["55 kg","60 kg","65 kg","70 kg"],
-"correct":"60 kg",
-"explanation":"132 ÷ 2.2 = 60 kg.",
-"why":"Always convert pounds into kilograms before using mg/kg formulas."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"Which unit is commonly used for patient body weight in medication calculations?",
-"answers":["Kilograms","Miles","Liters","Inches"],
-"correct":"Kilograms",
-"explanation":"Medication dosing formulas usually require kilograms.",
-"why":"Using the correct unit prevents dosage errors."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many grams are in 1000 milligrams?",
-"answers":["10","100","1000","1"],
-"correct":"1",
-"explanation":"1000 mg = 1 g.",
-"why":"Metric conversions are essential in healthcare."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many milliliters are in one liter?",
-"answers":["10","100","1000","10000"],
-"correct":"1000",
-"explanation":"1 L = 1000 mL.",
-"why":"Fluid measurements are often converted in medicine."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 198 pounds. What is the weight in kilograms?",
-"answers":["80 kg","85 kg","90 kg","95 kg"],
-"correct":"90 kg",
-"explanation":"198 ÷ 2.2 = 90 kg.",
-"why":"Kilograms are the standard weight unit in healthcare."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"Which conversion is correct?",
-"answers":["1 kg = 2.2 lb","1 lb = 2.2 kg","1 kg = 10 lb","1 lb = 5 kg"],
-"correct":"1 kg = 2.2 lb",
-"explanation":"One kilogram equals approximately 2.2 pounds.",
-"why":"Knowing common conversions improves calculation speed."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 110 pounds. What is the weight in kilograms?",
-"answers":["45 kg","50 kg","55 kg","60 kg"],
-"correct":"50 kg",
-"explanation":"110 ÷ 2.2 = 50 kg.",
-"why":"Weight conversions are one of the most common HOSA Medical Math questions."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"Why is accurate unit conversion important in healthcare?",
-"answers":[
-"To prevent medication errors",
-"To make numbers larger",
-"To save computer memory",
-"To increase patient age"
-],
-"correct":"To prevent medication errors",
-"explanation":"Incorrect unit conversions can lead to incorrect dosages.",
-"why":"Patient safety depends on accurate mathematical calculations."
-},
-]
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 176 pounds. What is the weight in kilograms?",
-"answers":["70 kg","75 kg","80 kg","85 kg"],
-"correct":"80 kg",
-"explanation":"Convert pounds to kilograms by dividing by 2.2.\n176 ÷ 2.2 = 80 kg.",
-"why":"Many medication dosages are calculated using kilograms."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many milligrams are in 2 grams?",
-"answers":["20 mg","200 mg","2,000 mg","20,000 mg"],
-"correct":"2,000 mg",
-"explanation":"Multiply grams by 1,000.\n2 × 1,000 = 2,000 mg.",
-"why":"Medication labels commonly switch between grams and milligrams."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many liters are equal to 2,500 mL?",
-"answers":["0.25 L","2.5 L","25 L","250 L"],
-"correct":"2.5 L",
-"explanation":"Divide milliliters by 1,000.\n2500 ÷ 1000 = 2.5 L.",
-"why":"Fluid conversions are common in IV therapy."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 88 pounds. What is the weight in kilograms?",
-"answers":["35 kg","40 kg","45 kg","50 kg"],
-"correct":"40 kg",
-"explanation":"88 ÷ 2.2 = 40 kg.",
-"why":"Weight-based calculations require kilograms."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"Which measurement is larger?",
-"answers":["500 mg","1 g","They are equal","100 mg"],
-"correct":"1 g",
-"explanation":"1 gram = 1000 milligrams, so 1 g is greater than 500 mg.",
-"why":"Understanding metric units helps prevent dosage errors."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many centimeters are in 1 meter?",
-"answers":["10","100","1,000","10,000"],
-"correct":"100",
-"explanation":"1 meter = 100 centimeters.",
-"why":"Metric length conversions appear in healthcare measurements."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 242 pounds. What is the weight in kilograms?",
-"answers":["100 kg","105 kg","110 kg","115 kg"],
-"correct":"110 kg",
-"explanation":"242 ÷ 2.2 = 110 kg.",
-"why":"Always convert pounds to kilograms before dosage calculations."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"How many milliliters are in 0.75 liters?",
-"answers":["75 mL","750 mL","7,500 mL","0.75 mL"],
-"correct":"750 mL",
-"explanation":"0.75 × 1000 = 750 mL.",
-"why":"Healthcare professionals frequently convert liters to milliliters."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"Which unit is commonly used to measure medication mass?",
-"answers":["Milligrams","Miles","Gallons","Yards"],
-"correct":"Milligrams",
-"explanation":"Many medications are measured in milligrams (mg).",
-"why":"Correct units are essential for patient safety."
-},
-
-{
-"chapter":"Medical Math Foundations",
-"question":"A patient weighs 66 pounds. What is the weight in kilograms?",
-"answers":["25 kg","30 kg","35 kg","40 kg"],
-"correct":"30 kg",
-"explanation":"66 ÷ 2.2 = 30 kg.",
-"why":"Weight conversion is one of the most common HOSA Medical Math skills."
-},
-    {
-        "question": "A patient weighs 154 pounds. Convert the weight to kilograms. (1 kg = 2.2 lb)",
-        "choices": ["50 kg", "60 kg", "70 kg", "80 kg"],
-        "answer": "70 kg",
-        "explanation": "Divide pounds by 2.2. 154 ÷ 2.2 = 70 kg."
-    },
-
-    {
-        "question": "A medication is ordered at 500 mg. Tablets contain 250 mg each. How many tablets are needed?",
-        "choices": ["1 tablet", "2 tablets", "3 tablets", "4 tablets"],
-        "answer": "2 tablets",
-        "explanation": "500 mg ÷ 250 mg per tablet = 2 tablets."
-    },
-
-    {
-        "question": "Convert 102°F to Celsius. Formula: °C = (°F − 32) × 5/9",
-        "choices": ["35°C", "38.9°C", "40°C", "42°C"],
-        "answer": "38.9°C",
-        "explanation": "(102 − 32) × 5/9 = 38.9°C."
-    },
-
-    {
-        "question": "A syringe contains 3 mL of medication. Each mL contains 20 mg. How many mg are present?",
-        "choices": ["20 mg", "40 mg", "60 mg", "80 mg"],
-        "answer": "60 mg",
-        "explanation": "3 mL × 20 mg = 60 mg."
-    },
-
-    {
-        "question": "A solution contains 15 g of medication in 300 mL. What is the concentration?",
-        "choices": ["0.05 g/mL", "0.5 g/mL", "5 g/mL", "20 g/mL"],
-        "answer": "0.05 g/mL",
-        "explanation": "15 ÷ 300 = 0.05 g/mL."
-    },
-
-    {
-        "question": "A patient drinks 8 ounces of water every hour for 6 hours. How many ounces total?",
-        "choices": ["14 oz", "24 oz", "48 oz", "64 oz"],
-        "answer": "48 oz",
-        "explanation": "8 × 6 = 48 ounces."
-    },
-
-    {
-        "question": "A hospital room has 12 beds. 75% are occupied. How many beds are occupied?",
-        "choices": ["6", "8", "9", "10"],
-        "answer": "9",
-        "explanation": "12 × 0.75 = 9 beds."
-    },
-
-    {
-        "question": "A heart rate changes from 80 bpm to 100 bpm. What is the percent increase?",
-        "choices": ["10%", "20%", "25%", "30%"],
-        "answer": "25%",
-        "explanation": "(100-80) ÷ 80 × 100 = 25%."
-    },
-
-    {
-        "question": "Temperatures are 98°F, 99°F, 100°F, 101°F. What is the average?",
-        "choices": ["98°F", "99°F", "99.5°F", "100°F"],
-        "answer": "99.5°F",
-        "explanation": "Add values and divide by 4: 398 ÷ 4 = 99.5."
-    },
-
-    {
-        "question": "A medication costs $80. A hospital receives a 15% discount. What is the final cost?",
-        "choices": ["$65", "$68", "$72", "$75"],
-        "answer": "$68",
-        "explanation": "15% of $80 is $12. $80-$12=$68."
-    },
-    {
-        "question": "Convert 2.5 liters into milliliters.",
-        "choices": ["25 mL", "250 mL", "2500 mL", "25000 mL"],
-        "answer": "2500 mL",
-        "explanation": "1 liter equals 1000 mL. 2.5 × 1000 = 2500 mL."
-    },
-
-    {
-        "question": "A patient needs 1200 mL of fluid over 8 hours. How many mL per hour?",
-        "choices": ["100 mL/hr", "150 mL/hr", "200 mL/hr", "250 mL/hr"],
-        "answer": "150 mL/hr",
-        "explanation": "1200 mL ÷ 8 hours = 150 mL/hr."
-    },
-
-    {
-        "question": "A dosage requires 0.75 mg. Which fraction is equivalent?",
-        "choices": ["1/4 mg", "1/2 mg", "3/4 mg", "4/5 mg"],
-        "answer": "3/4 mg",
-        "explanation": "0.75 written as a fraction is 75/100, simplified to 3/4."
-    },
-
-    {
-        "question": "A patient's blood pressure is 120/80. What does the top number represent?",
-        "choices": ["Pulse rate", "Systolic pressure", "Diastolic pressure", "Oxygen level"],
-        "answer": "Systolic pressure",
-        "explanation": "The top number in blood pressure is systolic pressure."
-    },
-
-    {
-        "question": "A clinic sees 40 patients per day. How many patients are seen in 5 days?",
-        "choices": ["100", "150", "200", "250"],
-        "answer": "200",
-        "explanation": "40 patients × 5 days = 200 patients."
-    },
-
-    {
-        "question": "A medication bottle contains 100 mL. If 20 mL is used each day, how many days will it last?",
-        "choices": ["2 days", "4 days", "5 days", "10 days"],
-        "answer": "5 days",
-        "explanation": "100 mL ÷ 20 mL per day = 5 days."
-    },
-
-    {
-        "question": "A patient's oxygen level is 96%. It drops by 5%. What is the new oxygen level?",
-        "choices": ["91%", "92%", "93%", "94%"],
-        "answer": "91%",
-        "explanation": "96% - 5% = 91%."
-    },
-
-    {
-        "question": "A nurse works a 12-hour shift and takes three 20-minute breaks. How much working time remains?",
-        "choices": ["10 hours", "11 hours", "11.5 hours", "12 hours"],
-        "answer": "11 hours",
-        "explanation": "Three 20-minute breaks = 60 minutes = 1 hour. 12 - 1 = 11 hours."
-    },
-
-    {
-        "question": "A patient weighs 70 kg and is 1.75 m tall. Calculate BMI. Formula: BMI = weight ÷ height²",
-        "choices": ["18.9", "22.9", "25.5", "30.0"],
-        "answer": "22.9",
-        "explanation": "70 ÷ (1.75 × 1.75) = 22.9 BMI."
-    },
-
-    {
-        "question": "A medical supply order costs $250. Sales tax is 8%. What is the total cost?",
-        "choices": ["$258", "$265", "$270", "$275"],
-        "answer": "$270",
-        "explanation": "8% of $250 is $20. $250 + $20 = $270."
-    },
-        {
-        "question": "A patient receives 3 doses of medication per day for 7 days. How many total doses are given?",
-        "choices": ["10 doses", "14 doses", "21 doses", "24 doses"],
-        "answer": "21 doses",
-        "explanation": "3 doses per day × 7 days = 21 total doses."
-    },
-
-    {
-        "question": "A nurse measures a patient's pulse at 72 beats per minute. How many beats occur in 5 minutes?",
-        "choices": ["240 beats", "300 beats", "360 beats", "420 beats"],
-        "answer": "360 beats",
-        "explanation": "72 beats/min × 5 minutes = 360 beats."
-    },
-
-    {
-        "question": "A medical chart contains 80 pages. A nurse has completed 60 pages. What percentage is completed?",
-        "choices": ["50%", "60%", "75%", "80%"],
-        "answer": "75%",
-        "explanation": "60 ÷ 80 × 100 = 75%."
-    },
-
-    {
-        "question": "A patient drinks 1.5 liters of fluid. How many milliliters is this?",
-        "choices": ["150 mL", "500 mL", "1000 mL", "1500 mL"],
-        "answer": "1500 mL",
-        "explanation": "1 liter = 1000 mL. 1.5 × 1000 = 1500 mL."
-    },
-
-    {
-        "question": "A medication dose is increased from 200 mg to 300 mg. What is the increase?",
-        "choices": ["50 mg", "75 mg", "100 mg", "150 mg"],
-        "answer": "100 mg",
-        "explanation": "300 mg - 200 mg = 100 mg increase."
-    },
-
-    {
-        "question": "A patient has a temperature of 37°C. What is this approximately in Fahrenheit?",
-        "choices": ["90.6°F", "98.6°F", "100°F", "102°F"],
-        "answer": "98.6°F",
-        "explanation": "°F = (37 × 9/5) + 32 = 98.6°F."
-    },
-
-    {
-        "question": "A hospital orders 5 boxes of gloves. Each box contains 50 gloves. How many gloves are ordered?",
-        "choices": ["100 gloves", "200 gloves", "250 gloves", "500 gloves"],
-        "answer": "250 gloves",
-        "explanation": "5 boxes × 50 gloves = 250 gloves."
-    },
-
-    {
-        "question": "A patient needs 750 mL of IV fluid. The bag contains 1000 mL. How much remains after treatment?",
-        "choices": ["150 mL", "200 mL", "250 mL", "500 mL"],
-        "answer": "250 mL",
-        "explanation": "1000 mL - 750 mL = 250 mL."
-    },
-
-    {
-        "question": "A medical device costs $400. It is discounted by 20%. What is the new price?",
-        "choices": ["$300", "$320", "$350", "$380"],
-        "answer": "$320",
-        "explanation": "20% of $400 is $80. $400 - $80 = $320."
-    },
-
-    {
-        "question": "A nurse records 6 patient weights: 60, 65, 70, 75, 80, and 90 kg. What is the average weight?",
-        "choices": ["70 kg", "73 kg", "75 kg", "80 kg"],
-        "answer": "73 kg",
-        "explanation": "Add weights: 440 ÷ 6 = approximately 73 kg."
-    },
-
-    {
-        "question": "A patient is prescribed 1000 mg of medication. The tablets are 500 mg each. How many tablets are needed?",
-        "choices": ["1 tablet", "2 tablets", "3 tablets", "4 tablets"],
-        "answer": "2 tablets",
-        "explanation": "1000 mg ÷ 500 mg = 2 tablets."
-    },
-
-    {
-        "question": "A hospital has 250 employees. 40% work in patient care. How many employees work in patient care?",
-        "choices": ["50", "75", "100", "125"],
-        "answer": "100",
-        "explanation": "250 × 0.40 = 100 employees."
-    },
-
-    {
-        "question": "A patient’s respiratory rate is 18 breaths per minute. How many breaths occur in 10 minutes?",
-        "choices": ["90", "120", "180", "200"],
-        "answer": "180",
-        "explanation": "18 breaths/min × 10 minutes = 180 breaths."
-    },
-
-    {
-        "question": "A container holds 2 gallons of liquid. How many quarts are in the container? (1 gallon = 4 quarts)",
-        "choices": ["4 quarts", "6 quarts", "8 quarts", "10 quarts"],
-        "answer": "8 quarts",
-        "explanation": "2 gallons × 4 quarts = 8 quarts."
-    },
-
-    {
-        "question": "A patient’s heart rate decreases from 120 bpm to 90 bpm. What is the decrease?",
-        "choices": ["20 bpm", "25 bpm", "30 bpm", "40 bpm"],
-        "answer": "30 bpm",
-        "explanation": "120 - 90 = 30 bpm decrease."
-    },
-
-    {
-        "question": "A clinic schedules 15 patients every morning for 4 days. How many appointments are scheduled?",
-        "choices": ["45", "50", "60", "75"],
-        "answer": "60",
-        "explanation": "15 patients × 4 days = 60 appointments."
-    },
-
-    {
-        "question": "A medication concentration is 5 mg/mL. How many mg are in 10 mL?",
-        "choices": ["15 mg", "25 mg", "50 mg", "100 mg"],
-        "answer": "50 mg",
-        "explanation": "5 mg/mL × 10 mL = 50 mg."
-    },
-
-    {
-        "question": "A patient’s blood glucose changes from 150 mg/dL to 120 mg/dL. What is the decrease?",
-        "choices": ["20 mg/dL", "30 mg/dL", "40 mg/dL", "50 mg/dL"],
-        "answer": "30 mg/dL",
-        "explanation": "150 - 120 = 30 mg/dL."
-    },
-
-    {
-        "question": "A nurse works 36 hours in 3 days. What is the average number of hours worked per day?",
-        "choices": ["10 hours", "12 hours", "14 hours", "18 hours"],
-        "answer": "12 hours",
-        "explanation": "36 hours ÷ 3 days = 12 hours/day."
-    },
-
-    {
-        "question": "A patient takes a medication every 6 hours. How many doses are taken in 24 hours?",
-        "choices": ["2 doses", "3 doses", "4 doses", "6 doses"],
-        "answer": "4 doses",
-        "explanation": "24 hours ÷ 6 hours = 4 doses."
-    },
-        {
-        "question": "A patient weighs 176 pounds. Convert the weight to kilograms. (1 kg = 2.2 lb)",
-        "choices": ["60 kg", "70 kg", "80 kg", "90 kg"],
-        "answer": "80 kg",
-        "explanation": "176 ÷ 2.2 = 80 kg."
-    },
-
-    {
-        "question": "A nurse gives 2.5 mL of medication three times per day. How much medication is given daily?",
-        "choices": ["5 mL", "7.5 mL", "10 mL", "12.5 mL"],
-        "answer": "7.5 mL",
-        "explanation": "2.5 mL × 3 doses = 7.5 mL."
-    },
-
-    {
-        "question": "A patient's pulse is measured at 90 bpm. What does bpm stand for?",
-        "choices": ["Breaths per minute", "Beats per minute", "Blood pressure measurement", "Body pressure measurement"],
-        "answer": "Beats per minute",
-        "explanation": "BPM means beats per minute and measures heart rate."
-    },
-
-    {
-        "question": "A medication order requires 250 mg. Each capsule contains 50 mg. How many capsules are needed?",
-        "choices": ["3 capsules", "4 capsules", "5 capsules", "6 capsules"],
-        "answer": "5 capsules",
-        "explanation": "250 mg ÷ 50 mg = 5 capsules."
-    },
-
-    {
-        "question": "A hospital has 500 masks. Workers use 35% of them. How many masks are used?",
-        "choices": ["150", "175", "200", "225"],
-        "answer": "175",
-        "explanation": "500 × 0.35 = 175 masks."
-    },
-
-    {
-        "question": "A patient drinks 240 mL of water 5 times per day. How much water is consumed?",
-        "choices": ["1000 mL", "1200 mL", "1400 mL", "1500 mL"],
-        "answer": "1200 mL",
-        "explanation": "240 × 5 = 1200 mL."
-    },
-
-    {
-        "question": "Convert 3.2 kilograms into grams.",
-        "choices": ["32 g", "320 g", "3200 g", "32000 g"],
-        "answer": "3200 g",
-        "explanation": "1 kg = 1000 g. 3.2 × 1000 = 3200 g."
-    },
-
-    {
-        "question": "A patient’s temperature rises from 98°F to 101°F. What is the increase?",
-        "choices": ["2°F", "3°F", "4°F", "5°F"],
-        "answer": "3°F",
-        "explanation": "101 - 98 = 3°F."
-    },
-
-    {
-        "question": "A medical bill is $600. Insurance pays 80%. How much does insurance pay?",
-        "choices": ["$400", "$480", "$500", "$520"],
-        "answer": "$480",
-        "explanation": "600 × 0.80 = $480."
-    },
-
-    {
-        "question": "A patient has 16 ounces of medication solution. Convert this to cups. (1 cup = 8 ounces)",
-        "choices": ["1 cup", "2 cups", "3 cups", "4 cups"],
-        "answer": "2 cups",
-        "explanation": "16 ÷ 8 = 2 cups."
-    },
-
-    {
-        "question": "A nurse checks 8 patients every hour for 6 hours. How many patients are checked?",
-        "choices": ["40", "48", "56", "64"],
-        "answer": "48",
-        "explanation": "8 × 6 = 48 patients."
-    },
-
-    {
-        "question": "A medication is diluted from 100 mL to 250 mL. How much liquid was added?",
-        "choices": ["100 mL", "125 mL", "150 mL", "200 mL"],
-        "answer": "150 mL",
-        "explanation": "250 - 100 = 150 mL added."
-    },
-
-    {
-        "question": "A patient's oxygen saturation changes from 92% to 97%. What is the increase?",
-        "choices": ["3%", "5%", "7%", "10%"],
-        "answer": "5%",
-        "explanation": "97 - 92 = 5% increase."
-    },
-
-    {
-        "question": "A nurse works 8 hours per shift for 5 shifts. How many hours worked?",
-        "choices": ["30 hours", "35 hours", "40 hours", "45 hours"],
-        "answer": "40 hours",
-        "explanation": "8 × 5 = 40 hours."
-    },
-
-    {
-        "question": "A prescription says take 1 tablet every 8 hours. How many tablets are taken per day?",
-        "choices": ["2 tablets", "3 tablets", "4 tablets", "8 tablets"],
-        "answer": "3 tablets",
-        "explanation": "24 ÷ 8 = 3 tablets."
-    },
-
-    {
-        "question": "A hospital room temperature is 22°C. Which scale is this measured in?",
-        "choices": ["Fahrenheit", "Celsius", "Kelvin", "Rankine"],
-        "answer": "Celsius",
-        "explanation": "°C is the Celsius temperature scale."
-    },
-
-    {
-        "question": "A patient needs 1500 mL of fluid. The IV runs at 125 mL/hr. How many hours will it take?",
-        "choices": ["10 hours", "12 hours", "15 hours", "20 hours"],
-        "answer": "12 hours",
-        "explanation": "1500 ÷ 125 = 12 hours."
-    },
-
-    {
-        "question": "A clinic has 90 appointments. 20% are canceled. How many appointments remain?",
-        "choices": ["60", "70", "72", "80"],
-        "answer": "72",
-        "explanation": "20% of 90 is 18. 90 - 18 = 72."
-    },
-
-    {
-        "question": "A medication costs $120 and increases by 10%. What is the new cost?",
-        "choices": ["$125", "$130", "$132", "$140"],
-        "answer": "$132",
-        "explanation": "10% of $120 is $12. $120 + $12 = $132."
-    },
-
-    {
-        "question": "A patient has a BMI of 24. What category does this fall into?",
-        "choices": ["Underweight", "Healthy range", "Overweight", "Obese"],
-        "answer": "Healthy range",
-        "explanation": "A BMI between about 18.5 and 24.9 is considered the healthy range."
-    },
-    {
-        "question": "A patient receives 60 mg of medication. The solution contains 20 mg/mL. How many mL are needed?",
-        "choices": ["2 mL", "3 mL", "4 mL", "5 mL"],
-        "answer": "3 mL",
-        "explanation": "60 mg ÷ 20 mg/mL = 3 mL."
-    },
-
-    {
-        "question": "A nurse measures 5 patients' temperatures: 98, 99, 100, 101, and 102°F. What is the median temperature?",
-        "choices": ["98°F", "99°F", "100°F", "101°F"],
-        "answer": "100°F",
-        "explanation": "The median is the middle number when arranged in order."
-    },
-
-    {
-        "question": "A hospital has 300 patients. 60% are receiving medication. How many patients receive medication?",
-        "choices": ["120", "150", "180", "200"],
-        "answer": "180",
-        "explanation": "300 × 0.60 = 180 patients."
-    },
-
-    {
-        "question": "Convert 4500 mL into liters.",
-        "choices": ["0.45 L", "4.5 L", "45 L", "450 L"],
-        "answer": "4.5 L",
-        "explanation": "1000 mL = 1 L. 4500 ÷ 1000 = 4.5 L."
-    },
-
-    {
-        "question": "A patient takes 2 tablets every 12 hours. How many tablets are taken in 24 hours?",
-        "choices": ["2 tablets", "3 tablets", "4 tablets", "6 tablets"],
-        "answer": "4 tablets",
-        "explanation": "24 ÷ 12 = 2 doses. 2 tablets × 2 = 4 tablets."
-    },
-
-    {
-        "question": "A medical test costs $150. A discount reduces the cost by 30%. What is the final price?",
-        "choices": ["$95", "$105", "$115", "$120"],
-        "answer": "$105",
-        "explanation": "30% of $150 is $45. $150 - $45 = $105."
-    },
-
-    {
-        "question": "A patient weighs 90 kg and loses 10 kg. What is the new weight?",
-        "choices": ["70 kg", "75 kg", "80 kg", "85 kg"],
-        "answer": "80 kg",
-        "explanation": "90 kg - 10 kg = 80 kg."
-    },
-
-    {
-        "question": "A nurse gives medication at 9 AM and every 4 hours after. What time is the next dose?",
-        "choices": ["10 AM", "11 AM", "1 PM", "3 PM"],
-        "answer": "1 PM",
-        "explanation": "9 AM + 4 hours = 1 PM."
-    },
-
-    {
-        "question": "A patient's heart rate is 75 bpm. How many beats occur in 4 minutes?",
-        "choices": ["150", "225", "300", "375"],
-        "answer": "300",
-        "explanation": "75 × 4 = 300 beats."
-    },
-
-    {
-        "question": "A container has 3.5 liters of fluid. How many milliliters is this?",
-        "choices": ["350 mL", "3500 mL", "35 mL", "35000 mL"],
-        "answer": "3500 mL",
-        "explanation": "3.5 × 1000 = 3500 mL."
-    },
-
-    {
-        "question": "A patient’s blood pressure is 130/85. Which number is diastolic?",
-        "choices": ["130", "85", "215", "Cannot determine"],
-        "answer": "85",
-        "explanation": "The bottom number represents diastolic pressure."
-    },
-
-    {
-        "question": "A hospital orders 12 boxes of gloves. Each box has 75 gloves. How many gloves total?",
-        "choices": ["600", "750", "900", "1000"],
-        "answer": "900",
-        "explanation": "12 × 75 = 900 gloves."
-    },
-
-    {
-        "question": "A medication dose changes from 400 mg to 500 mg. What is the percent increase?",
-        "choices": ["10%", "20%", "25%", "30%"],
-        "answer": "25%",
-        "explanation": "(500-400) ÷ 400 × 100 = 25%."
-    },
-
-    {
-        "question": "A patient needs 2400 mL of fluid in 24 hours. What is the hourly rate?",
-        "choices": ["50 mL/hr", "75 mL/hr", "100 mL/hr", "120 mL/hr"],
-        "answer": "100 mL/hr",
-        "explanation": "2400 ÷ 24 = 100 mL/hr."
-    },
-
-    {
-        "question": "A nurse checks 25 patients. 5 need additional care. What percentage need additional care?",
-        "choices": ["10%", "20%", "25%", "30%"],
-        "answer": "20%",
-        "explanation": "5 ÷ 25 × 100 = 20%."
-    },
-
-    {
-        "question": "Convert 98.6°F to Celsius.",
-        "choices": ["35°C", "37°C", "39°C", "40°C"],
-        "answer": "37°C",
-        "explanation": "98.6°F equals approximately 37°C."
-    },
-
-    {
-        "question": "A patient drinks 500 mL in the morning and 750 mL at night. Total intake?",
-        "choices": ["1000 mL", "1150 mL", "1250 mL", "1500 mL"],
-        "answer": "1250 mL",
-        "explanation": "500 + 750 = 1250 mL."
-    },
-
-    {
-        "question": "A nurse works 40 hours per week. How many hours in 4 weeks?",
-        "choices": ["120 hours", "140 hours", "160 hours", "180 hours"],
-        "answer": "160 hours",
-        "explanation": "40 × 4 = 160 hours."
-    },
-
-    {
-        "question": "A patient's medication requires 1.5 tablets per dose. How many tablets are needed for 4 doses?",
-        "choices": ["4 tablets", "5 tablets", "6 tablets", "8 tablets"],
-        "answer": "6 tablets",
-        "explanation": "1.5 × 4 = 6 tablets."
-    },
-
-    {
-        "question": "A clinic has 200 appointments. 15% are canceled. How many appointments are completed?",
-        "choices": ["150", "170", "180", "185"],
-        "answer": "170",
-        "explanation": "15% of 200 is 30. 200 - 30 = 170."
-    }
 user_progress = {
 
     "questions_completed":0,
