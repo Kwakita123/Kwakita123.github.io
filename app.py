@@ -1378,7 +1378,7 @@ questions = [
     "answers":["40","50","60","70"],
     "correct":"60",
     "explanation":"260 - 200 = 60.",
-    "why":"Healthcare w{
+    "why":"Healthcare workers analyze changes in data.",
     "chapter":"Medical Math Foundations",
     "question":"Convert 8.5 kilograms into grams.",
     "answers":["85 g","850 g","8500 g","85000 g"],
