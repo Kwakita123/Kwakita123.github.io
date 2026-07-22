@@ -1380,6 +1380,7 @@ questions = [
     "explanation":"260 - 200 = 60.",
     "why":"Healthcare workers analyze changes in data.",
 }
+]
 user_progress = {
 
     "questions_completed":0,
