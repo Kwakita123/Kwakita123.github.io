@@ -1209,6 +1209,145 @@ questions = [
         "answer": "Healthy range",
         "explanation": "A BMI between about 18.5 and 24.9 is considered the healthy range."
     },
+    {
+        "question": "A patient receives 60 mg of medication. The solution contains 20 mg/mL. How many mL are needed?",
+        "choices": ["2 mL", "3 mL", "4 mL", "5 mL"],
+        "answer": "3 mL",
+        "explanation": "60 mg ÷ 20 mg/mL = 3 mL."
+    },
+
+    {
+        "question": "A nurse measures 5 patients' temperatures: 98, 99, 100, 101, and 102°F. What is the median temperature?",
+        "choices": ["98°F", "99°F", "100°F", "101°F"],
+        "answer": "100°F",
+        "explanation": "The median is the middle number when arranged in order."
+    },
+
+    {
+        "question": "A hospital has 300 patients. 60% are receiving medication. How many patients receive medication?",
+        "choices": ["120", "150", "180", "200"],
+        "answer": "180",
+        "explanation": "300 × 0.60 = 180 patients."
+    },
+
+    {
+        "question": "Convert 4500 mL into liters.",
+        "choices": ["0.45 L", "4.5 L", "45 L", "450 L"],
+        "answer": "4.5 L",
+        "explanation": "1000 mL = 1 L. 4500 ÷ 1000 = 4.5 L."
+    },
+
+    {
+        "question": "A patient takes 2 tablets every 12 hours. How many tablets are taken in 24 hours?",
+        "choices": ["2 tablets", "3 tablets", "4 tablets", "6 tablets"],
+        "answer": "4 tablets",
+        "explanation": "24 ÷ 12 = 2 doses. 2 tablets × 2 = 4 tablets."
+    },
+
+    {
+        "question": "A medical test costs $150. A discount reduces the cost by 30%. What is the final price?",
+        "choices": ["$95", "$105", "$115", "$120"],
+        "answer": "$105",
+        "explanation": "30% of $150 is $45. $150 - $45 = $105."
+    },
+
+    {
+        "question": "A patient weighs 90 kg and loses 10 kg. What is the new weight?",
+        "choices": ["70 kg", "75 kg", "80 kg", "85 kg"],
+        "answer": "80 kg",
+        "explanation": "90 kg - 10 kg = 80 kg."
+    },
+
+    {
+        "question": "A nurse gives medication at 9 AM and every 4 hours after. What time is the next dose?",
+        "choices": ["10 AM", "11 AM", "1 PM", "3 PM"],
+        "answer": "1 PM",
+        "explanation": "9 AM + 4 hours = 1 PM."
+    },
+
+    {
+        "question": "A patient's heart rate is 75 bpm. How many beats occur in 4 minutes?",
+        "choices": ["150", "225", "300", "375"],
+        "answer": "300",
+        "explanation": "75 × 4 = 300 beats."
+    },
+
+    {
+        "question": "A container has 3.5 liters of fluid. How many milliliters is this?",
+        "choices": ["350 mL", "3500 mL", "35 mL", "35000 mL"],
+        "answer": "3500 mL",
+        "explanation": "3.5 × 1000 = 3500 mL."
+    },
+
+    {
+        "question": "A patient’s blood pressure is 130/85. Which number is diastolic?",
+        "choices": ["130", "85", "215", "Cannot determine"],
+        "answer": "85",
+        "explanation": "The bottom number represents diastolic pressure."
+    },
+
+    {
+        "question": "A hospital orders 12 boxes of gloves. Each box has 75 gloves. How many gloves total?",
+        "choices": ["600", "750", "900", "1000"],
+        "answer": "900",
+        "explanation": "12 × 75 = 900 gloves."
+    },
+
+    {
+        "question": "A medication dose changes from 400 mg to 500 mg. What is the percent increase?",
+        "choices": ["10%", "20%", "25%", "30%"],
+        "answer": "25%",
+        "explanation": "(500-400) ÷ 400 × 100 = 25%."
+    },
+
+    {
+        "question": "A patient needs 2400 mL of fluid in 24 hours. What is the hourly rate?",
+        "choices": ["50 mL/hr", "75 mL/hr", "100 mL/hr", "120 mL/hr"],
+        "answer": "100 mL/hr",
+        "explanation": "2400 ÷ 24 = 100 mL/hr."
+    },
+
+    {
+        "question": "A nurse checks 25 patients. 5 need additional care. What percentage need additional care?",
+        "choices": ["10%", "20%", "25%", "30%"],
+        "answer": "20%",
+        "explanation": "5 ÷ 25 × 100 = 20%."
+    },
+
+    {
+        "question": "Convert 98.6°F to Celsius.",
+        "choices": ["35°C", "37°C", "39°C", "40°C"],
+        "answer": "37°C",
+        "explanation": "98.6°F equals approximately 37°C."
+    },
+
+    {
+        "question": "A patient drinks 500 mL in the morning and 750 mL at night. Total intake?",
+        "choices": ["1000 mL", "1150 mL", "1250 mL", "1500 mL"],
+        "answer": "1250 mL",
+        "explanation": "500 + 750 = 1250 mL."
+    },
+
+    {
+        "question": "A nurse works 40 hours per week. How many hours in 4 weeks?",
+        "choices": ["120 hours", "140 hours", "160 hours", "180 hours"],
+        "answer": "160 hours",
+        "explanation": "40 × 4 = 160 hours."
+    },
+
+    {
+        "question": "A patient's medication requires 1.5 tablets per dose. How many tablets are needed for 4 doses?",
+        "choices": ["4 tablets", "5 tablets", "6 tablets", "8 tablets"],
+        "answer": "6 tablets",
+        "explanation": "1.5 × 4 = 6 tablets."
+    },
+
+    {
+        "question": "A clinic has 200 appointments. 15% are canceled. How many appointments are completed?",
+        "choices": ["150", "170", "180", "185"],
+        "answer": "170",
+        "explanation": "15% of 200 is 30. 200 - 30 = 170."
+    }
 user_progress = {
 
     "questions_completed":0,
